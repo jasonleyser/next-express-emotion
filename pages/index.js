@@ -93,7 +93,7 @@ export default class IndexPage extends React.Component {
 
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
-        <nav css={STYLES_NAVIGATION}>Navigation</nav>
+        <nav css={STYLES_NAVIGATION}>MIDNIGHT</nav>
         <div css={STYLES_LAYOUT}>
           <span css={STYLES_LAYOUT_LEFT}>Left Sidebar</span>
           <span css={STYLES_LAYOUT_RIGHT}>Right Content</span>
