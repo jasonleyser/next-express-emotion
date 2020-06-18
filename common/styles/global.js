@@ -29,10 +29,19 @@ export default () => css`
     display: block;
   }
 
+  @font-face {
+      font-family: 'vhs';
+      src: local('vhs'), url(./static/fonts/VT323-Regular.ttf) format('truetype');
+  }
+
   html, body {
     background: ${Constants.colors.white};
-    color: ${Constants.colors.black};
+    color: ${Constants.colors.green};
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
   }
+
+  a {
+    color: ${Constants.colors.white};
+  }
+
 `;
