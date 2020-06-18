@@ -56,7 +56,6 @@ export class GetData extends React.Component {
 }
 
 export class DisplayData extends React.Component {
-
    render() {
       return (
         <div key="displayData">

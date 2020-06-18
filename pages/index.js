@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
-import * as System from "~/pages/components";
+import * as System from "~/components";
 import Typist from 'react-typist';
 
 import Head from "next/head";
