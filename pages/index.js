@@ -170,15 +170,11 @@ export default class IndexPage extends React.Component {
 
         <nav css={STYLES_NAVIGATION}>
           <Typist cursor='true'>
-            <span> [ &#62; MIDNIGHT ENDS </span>
+            <span> [ &#62; MIDNIGHT ENDS</span>
             <Typist.Backspace count={15} delay={2000} />
-            <span> YEAR: 2094 </span>
-            <Typist.Backspace count={12} delay={2000} />
-            <span> HIP-HOP RESURRECTION</span>
-            <Typist.Backspace count={21} delay={2000} />
             <span> OLD IS GOLD</span>
             <Typist.Backspace count={12} delay={2000} />
-            <span> MIDNIGHT ENDS </span>
+            <span> MIDNIGHT ENDS ]</span>
         </Typist>
       </nav>
 

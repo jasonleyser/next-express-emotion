@@ -29,19 +29,21 @@ export default () => css`
     display: block;
   }
 
-  @font-face {
-      font-family: 'vhs';
-      src: local('vhs'), url(./static/fonts/VT323-Regular.ttf) format('truetype');
-  }
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
   html, body {
     background: ${Constants.colors.white};
     color: ${Constants.colors.green};
     font-size: 16px;
+    font-family: 'VT323';
   }
 
   a {
     color: ${Constants.colors.white};
+  }
+
+  a:hover {
+    color: ${Constants.colors.green};
   }
 
 `;
