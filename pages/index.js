@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
 import * as System from "~/components";
-import Typist from 'react-typist';
 
 import Head from "next/head";
 
@@ -53,6 +52,11 @@ const STYLES_OVERLAY = css`
         transparent 100%);
     background-repeat: no-repeat;
     animation: scan 7.5s linear 0s infinite;
+  }
+
+  @keyframes scan {
+    0%        { background-position: 0 -100vh; }
+    35%, 100% { background-position: 0 100vh; }
   }
 `;
 
@@ -169,14 +173,8 @@ export default class IndexPage extends React.Component {
         <div css={STYLES_OVERLAY}></div>
 
         <nav css={STYLES_NAVIGATION}>
-          <Typist cursor='true'>
-            <span> [ &#62; MIDNIGHT ENDS</span>
-            <Typist.Backspace count={15} delay={2000} />
-            <span> OLD IS GOLD</span>
-            <Typist.Backspace count={12} delay={2000} />
-            <span> MIDNIGHT ENDS ]</span>
-        </Typist>
-      </nav>
+          <System.Logo />
+        </nav>
 
         <div css={STYLES_LAYOUT}>
 

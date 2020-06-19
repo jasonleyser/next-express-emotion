@@ -1,4 +1,5 @@
 import * as React from "react";
+import Typist from 'react-typist';
 import { css } from "@emotion/react";
 
 export class GetData extends React.Component {
@@ -63,6 +64,25 @@ export class DisplayData extends React.Component {
           [Artist] {this.props.artist}<br /><br />
           [Album] {this.props.album}<br /><br />
           [Links] <a href={this.props.link} target="_blank">Discogs</a>
+        </div>
+      );
+   }
+}
+
+const typing = {
+  show: true,
+  element: '--',
+  hideWhenDone: true,
+};
+
+
+export class Logo extends React.Component {
+   render() {
+      return (
+        <div key="logo">
+          <Typist cursor="{...typing}">
+            <span> &#62; MIDNIGHT RADIO </span>
+          </Typist>
         </div>
       );
    }
