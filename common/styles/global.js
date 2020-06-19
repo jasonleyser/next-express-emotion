@@ -39,11 +39,12 @@ export default () => css`
   }
 
   a {
-    color: ${Constants.colors.white};
+    color: ${Constants.colors.green};
   }
 
   a:hover {
-    color: ${Constants.colors.green};
+    color: ${Constants.colors.black};
+    background: ${Constants.colors.green};
   }
 
 `;

@@ -1,6 +1,12 @@
 import * as React from "react";
 import Typist from 'react-typist';
+import * as Constants from "~/common/constants";
 import { css } from "@emotion/react";
+
+const STYLES_WHITE = css`
+  color: ${Constants.colors.white};
+  display: inline-block;
+`;
 
 export class GetData extends React.Component {
     intervalID;
@@ -13,6 +19,7 @@ export class GetData extends React.Component {
       artist: null,
       album: null,
       link: null,
+      duration: null,
     }
 
     componentDidMount() {
@@ -32,6 +39,7 @@ export class GetData extends React.Component {
             artist: data.artist,
             album: data.album,
             link: data.buy_link,
+            duration: data.duration,
            });
           // call getData() again in 10 seconds
           this.intervalID = setTimeout(this.getData.bind(this), 10000);
@@ -43,6 +51,7 @@ export class GetData extends React.Component {
      const artist = this.state.artist;
      const album = this.state.album;
      const link = this.state.link;
+     const duration = this.state.duration;
 
       return (
         <DisplayData
@@ -50,6 +59,7 @@ export class GetData extends React.Component {
           artist={artist}
           album={album}
           link={link}
+          duration={duration}
         />
       );
 
@@ -63,25 +73,18 @@ export class DisplayData extends React.Component {
           [Title] {this.props.title}<br /><br />
           [Artist] {this.props.artist}<br /><br />
           [Album] {this.props.album}<br /><br />
-          [Links] <a href={this.props.link} target="_blank">Discogs</a>
+          [Links] <a href={this.props.link} target="_blank">Discogs</a> 
         </div>
       );
    }
 }
 
-const typing = {
-  show: true,
-  element: '--',
-  hideWhenDone: true,
-};
-
-
 export class Logo extends React.Component {
    render() {
       return (
         <div key="logo">
-          <Typist cursor="{...typing}">
-            <span> &#62; MIDNIGHT RADIO </span>
+          <Typist>
+            <span> [ > <div css={STYLES_WHITE}> MIDNIGHT RADIO </div> ] </span>
           </Typist>
         </div>
       );

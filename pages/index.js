@@ -63,7 +63,11 @@ const STYLES_OVERLAY = css`
 const STYLES_LAYOUT_LEFT = css`
   height: calc(100vh - ${Constants.sizes.navigation}px);
   width: ${Constants.sizes.sidebar}%;
-  background: ${Constants.colors.black};
+
+  background-color: #131;
+  background-image:
+    radial-gradient(ellipse 500% 100% at 50% 90%, transparent, #121);
+
   padding: 24px 24px 24px 24px;
   font-size: 2rem;
   text-shadow: 0 0 2px ${Constants.colors.green};
@@ -86,7 +90,7 @@ const STYLES_LAYOUT_RIGHT = css`
   font-size: 2rem;
   overflow-y: scroll;
 
-  background-image: url("/static/flying.gif");
+  background-image: url("https://media1.giphy.com/media/48PPZ0qz5ScFjbDp3r/giphy.gif?cid=ecf05e47b7704f563232cedbd51232de303b8943cbd02cc7&rid=giphy.gif");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -100,7 +104,7 @@ const STYLES_LAYOUT_RIGHT = css`
 const STYLES_NAVIGATION = css`
   height: ${Constants.sizes.navigation}px;
   padding: 16px 0 0 24px;
-  background: ${Constants.colors.black};
+  background: ${Constants.colors.black_secondary};
   font-size: 2rem;
   border-bottom: 1px solid ${Constants.colors.green};
 `;
