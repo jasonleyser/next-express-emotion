@@ -4,7 +4,7 @@ import * as Constants from "~/common/constants";
 import { css } from "@emotion/react";
 
 const STYLES_WHITE = css`
-  color: ${Constants.colors.white};
+  color: ${Constants.colors.pink };
   display: inline-block;
 `;
 
@@ -73,7 +73,7 @@ export class DisplayData extends React.Component {
           [Title] {this.props.title}<br /><br />
           [Artist] {this.props.artist}<br /><br />
           [Album] {this.props.album}<br /><br />
-          [Links] <a href={this.props.link} target="_blank">Discogs</a> 
+          [Links] <a href={this.props.link} target="_blank"> Discogs </a>
         </div>
       );
    }
@@ -83,8 +83,12 @@ export class Logo extends React.Component {
    render() {
       return (
         <div key="logo">
-          <Typist>
-            <span> [ > <div css={STYLES_WHITE}> MIDNIGHT RADIO </div> ] </span>
+          <Typist cursor='true'>
+            <span>[> <div css={STYLES_WHITE}> MIDNIGHT RADIO </div> ] </span>
+            <Typist.Backspace count={18} delay={2000} />
+            <span><div css={STYLES_WHITE}> OLD IS GOLD </div> ] </span>
+            <Typist.Backspace count={15} delay={2000} />
+            <span><div css={STYLES_WHITE}> MIDNIGHT RADIO </div> ] </span>
           </Typist>
         </div>
       );

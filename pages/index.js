@@ -1,6 +1,8 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
 import * as System from "~/components";
+import ReactPlayer from 'react-player/lazy';
+
 
 import Head from "next/head";
 
@@ -46,9 +48,9 @@ const STYLES_OVERLAY = css`
     background-image: linear-gradient(
         0deg,
         transparent 0%,
-        rgba(32, 128, 32, 0.2) 2%,
-        rgba(32, 128, 32, 0.8) 3%,
-        rgba(32, 128, 32, 0.2) 3%,
+        rgba(16,228,229, 0.1) 2%,
+        rgba(16,228,229, 0.7) 3%,
+        rgba(16,228,229, 0.1) 3%,
         transparent 100%);
     background-repeat: no-repeat;
     animation: scan 7.5s linear 0s infinite;
@@ -64,9 +66,7 @@ const STYLES_LAYOUT_LEFT = css`
   height: calc(100vh - ${Constants.sizes.navigation}px);
   width: ${Constants.sizes.sidebar}%;
 
-  background-color: #131;
-  background-image:
-    radial-gradient(ellipse 500% 100% at 50% 90%, transparent, #121);
+  background-color: ${Constants.colors.black_secondary};
 
   padding: 24px 24px 24px 24px;
   font-size: 2rem;
@@ -90,7 +90,7 @@ const STYLES_LAYOUT_RIGHT = css`
   font-size: 2rem;
   overflow-y: scroll;
 
-  background-image: url("https://media1.giphy.com/media/48PPZ0qz5ScFjbDp3r/giphy.gif?cid=ecf05e47b7704f563232cedbd51232de303b8943cbd02cc7&rid=giphy.gif");
+  background-image: url("https://media1.giphy.com/media/LqDEIKfIm5DtvPXPrf/giphy.gif?cid=ecf05e47fc05d1d1b4ea5de4d57a283f946122dcf6fe8dbf&rid=giphy.gif");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -99,6 +99,11 @@ const STYLES_LAYOUT_RIGHT = css`
   ::-webkit-scrollbar {
     width: 0px;
   }
+
+  :hover {
+    background-image: url("https://media3.giphy.com/media/lWDgxXQXFXh7O/giphy.gif?cid=ecf05e476a0936a404af5f3f3b63717732a79b7398a1e83f&rid=giphy.gif");
+  }
+
 `;
 
 const STYLES_NAVIGATION = css`
@@ -126,6 +131,21 @@ const STYLES_MENU = css`
 `;
 
 export default class IndexPage extends React.Component {
+
+  state = {
+    playing: false,
+    radio_url: 'https://www.radioking.com/play/midnight',
+
+  }
+
+  handlePlay = () => {
+    this.setState({ radio_url: 'https://www.radioking.com/play/midnight', playing: true });
+  }
+
+  handleStop = () => {
+    this.setState({ radio_url: null, playing: false })
+  }
+
   render() {
     const title = "next-express-emotion";
     const description =
@@ -184,9 +204,15 @@ export default class IndexPage extends React.Component {
 
           <span css={STYLES_LAYOUT_LEFT}>
 
-            <div css={STYLES_MENU}>
-              >> STOP RADIO
-            </div>
+            {this.state.playing ?
+              <div css={STYLES_MENU}
+                onClick={this.handleStop}> >> STOP RADIO
+              </div>
+            :
+              <div css={STYLES_MENU}
+                onClick={this.handlePlay}> >> START RADIO
+              </div>
+            }
 
             <div css={STYLES_MENU}>
               >> NEXT STATION
@@ -201,7 +227,14 @@ export default class IndexPage extends React.Component {
           </span>
 
           <span css={STYLES_LAYOUT_RIGHT}>
-            Live
+            LIVE
+
+            <ReactPlayer
+                url={this.state.radio_url}
+                playsinline='true'
+                playing={this.state.playing}
+            />
+
           </span>
 
         </div>
