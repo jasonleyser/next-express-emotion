@@ -1,66 +1,11 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
 import * as System from "~/components";
-import ReactPlayer from 'react-player/lazy';
-
+import ReactPlayer from "react-player";
 
 import Head from "next/head";
 
 import { css } from "@emotion/react";
-
-const STYLES_NOISE = css`
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  opacity: .02;
-`;
-
-const STYLES_OVERLAY = css`
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background:
-      repeating-linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0) 100%);
-  background-size: auto 4px;
-  z-index: 1;
-
-  ::before {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-        0deg,
-        transparent 0%,
-        rgba(16,228,229, 0.1) 2%,
-        rgba(16,228,229, 0.7) 3%,
-        rgba(16,228,229, 0.1) 3%,
-        transparent 100%);
-    background-repeat: no-repeat;
-    animation: scan 7.5s linear 0s infinite;
-  }
-
-  @keyframes scan {
-    0%        { background-position: 0 -100vh; }
-    35%, 100% { background-position: 0 100vh; }
-  }
-`;
 
 const STYLES_LAYOUT_LEFT = css`
   height: calc(100vh - ${Constants.sizes.navigation}px);
@@ -82,6 +27,11 @@ const STYLES_LAYOUT_LEFT = css`
 `;
 
 const STYLES_LAYOUT_RIGHT = css`
+
+  flex-direction: column;
+  justify-content: flex-start;
+  display: block;
+
   height: calc(100vh - ${Constants.sizes.navigation}px);
   min-width: 20%;
   width: ${Constants.sizes.sidebar}%;
@@ -108,7 +58,7 @@ const STYLES_LAYOUT_RIGHT = css`
 
 const STYLES_NAVIGATION = css`
   height: ${Constants.sizes.navigation}px;
-  padding: 16px 0 0 24px;
+  padding: 0 0 0 0;
   background: ${Constants.colors.black_secondary};
   font-size: 2rem;
   border-bottom: 1px solid ${Constants.colors.green};
@@ -118,10 +68,38 @@ const STYLES_LAYOUT = css`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+`;
+
+const STYLES_NOISE = css`
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: auto 4px;
+  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: .02;
+`;
+
+const STYLES_OVERLAY = css`
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+      repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: auto 4px;
+  z-index: 1;
 `;
 
 const STYLES_MENU = css`
-
   :hover{
     cursor: pointer;
     color: ${Constants.colors.black};
@@ -134,12 +112,11 @@ export default class IndexPage extends React.Component {
 
   state = {
     playing: false,
-    radio_url: 'https://www.radioking.com/play/midnight',
-
+    radio_url: 'https://s4.radio.co/s76212900f/listen',
   }
 
   handlePlay = () => {
-    this.setState({ radio_url: 'https://www.radioking.com/play/midnight', playing: true });
+    this.setState({ radio_url: 'https://s4.radio.co/s76212900f/listen', playing: true });
   }
 
   handleStop = () => {
@@ -193,11 +170,11 @@ export default class IndexPage extends React.Component {
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
 
-        <div css={STYLES_NOISE}></div>
         <div css={STYLES_OVERLAY}></div>
+        <div css={STYLES_NOISE}></div>
 
         <nav css={STYLES_NAVIGATION}>
-          <System.Logo />
+          <img height="64px" src="/static/logo 13.png" />
         </nav>
 
         <div css={STYLES_LAYOUT}>
@@ -206,11 +183,11 @@ export default class IndexPage extends React.Component {
 
             {this.state.playing ?
               <div css={STYLES_MENU}
-                onClick={this.handleStop}> >> STOP RADIO
+                onClick={this.handleStop}> >> STOP STREAM
               </div>
-            :
+              :
               <div css={STYLES_MENU}
-                onClick={this.handlePlay}> >> START RADIO
+                onClick={this.handlePlay}> >> START STREAM
               </div>
             }
 
@@ -221,7 +198,7 @@ export default class IndexPage extends React.Component {
             <br /> <br />
 
             <System.GetData
-              url="https://api.radioking.io/widget/radio/midnight/track/current"
+              url="https://public.radio.co/stations/s76212900f/status"
             />
 
           </span>

@@ -1,5 +1,4 @@
 import * as React from "react";
-import Typist from 'react-typist';
 import * as Constants from "~/common/constants";
 import { css } from "@emotion/react";
 
@@ -16,10 +15,10 @@ export class GetData extends React.Component {
     state = {
       data: [],
       title: null,
-      artist: null,
-      album: null,
-      link: null,
-      duration: null,
+      //artist: null,
+      //album: null,
+      //link: null,
+      //duration: null,
     }
 
     componentDidMount() {
@@ -35,11 +34,11 @@ export class GetData extends React.Component {
         .then(response => response.json())
         .then(data => {
           this.setState({
-            title: data.title,
-            artist: data.artist,
-            album: data.album,
-            link: data.buy_link,
-            duration: data.duration,
+            title: data.current_track.title,
+            // artist: data.artist,
+            // album: data.album,
+            // link: data.buy_link,
+            // duration: data.duration,
            });
           // call getData() again in 10 seconds
           this.intervalID = setTimeout(this.getData.bind(this), 10000);
@@ -48,18 +47,19 @@ export class GetData extends React.Component {
 
    render() {
      const title = this.state.title;
-     const artist = this.state.artist;
-     const album = this.state.album;
-     const link = this.state.link;
-     const duration = this.state.duration;
+
+     //const artist = this.state.artist;
+     //const album = this.state.album;
+     //const link = this.state.link;
+     //const duration = this.state.duration;
 
       return (
         <DisplayData
           title={title}
-          artist={artist}
-          album={album}
-          link={link}
-          duration={duration}
+          //artist={artist}
+          //album={album}
+          //link={link}
+          //duration={duration}
         />
       );
 
@@ -71,25 +71,9 @@ export class DisplayData extends React.Component {
       return (
         <div key="displayData">
           [Title] {this.props.title}<br /><br />
-          [Artist] {this.props.artist}<br /><br />
-          [Album] {this.props.album}<br /><br />
-          [Links] <a href={this.props.link} target="_blank"> Discogs </a>
-        </div>
-      );
-   }
-}
-
-export class Logo extends React.Component {
-   render() {
-      return (
-        <div key="logo">
-          <Typist cursor='true'>
-            <span>[> <div css={STYLES_WHITE}> MIDNIGHT RADIO </div> ] </span>
-            <Typist.Backspace count={18} delay={2000} />
-            <span><div css={STYLES_WHITE}> OLD IS GOLD </div> ] </span>
-            <Typist.Backspace count={15} delay={2000} />
-            <span><div css={STYLES_WHITE}> MIDNIGHT RADIO </div> ] </span>
-          </Typist>
+          [Artist] <br /><br />
+          [Album] <br /><br />
+          [Links] <a href={this.props.title} target="_blank"> Discogs </a>
         </div>
       );
    }
