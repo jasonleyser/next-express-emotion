@@ -5,6 +5,7 @@ import ReactPlayer from "react-player";
 
 import Head from "next/head";
 
+
 import { css } from "@emotion/react";
 
 const STYLES_LAYOUT_LEFT = css`
@@ -27,11 +28,6 @@ const STYLES_LAYOUT_LEFT = css`
 `;
 
 const STYLES_LAYOUT_RIGHT = css`
-
-  flex-direction: column;
-  justify-content: flex-start;
-  display: block;
-
   height: calc(100vh - ${Constants.sizes.navigation}px);
   min-width: 20%;
   width: ${Constants.sizes.sidebar}%;
