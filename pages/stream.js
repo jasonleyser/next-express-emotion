@@ -24,11 +24,9 @@ const STYLES_LAYOUT_LEFT = css`
 `;
 
 const STYLES_CENTER = css`
-  position: absolute;
-  width: 40%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  horizontal-align: middle;
+  text-align:center;
 `;
 
 const STYLES_LAYOUT = css`
@@ -43,7 +41,7 @@ const STYLES_NOISE = css`
   width: 100%;
   height: 100%;
   background-size: auto 4px;
-  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-image: url("../public/static/static.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -68,9 +66,8 @@ const STYLES_OVERLAY = css`
 const STYLES_MENU = css`
   :hover{
     cursor: pointer;
-    color: ${Constants.colors.white};
-background-image: linear-gradient(to bottom, #f9014d, #f3005b, #ea0469, #e01474, #d5217f);
-    text-shadow: 0 0 1px ${Constants.colors.white};
+    color: ${Constants.colors.red};
+    text-shadow: 0 0 1px ${Constants.colors.red};
   }
 `;
 
@@ -169,23 +166,22 @@ export default class StreamPage extends React.Component {
         </Head>
 
         <div css={STYLES_OVERLAY}></div>
-        <div css={STYLES_NOISE}></div>
 
         <div css={STYLES_LAYOUT}>
 
           <span css={STYLES_LAYOUT_LEFT}>
 
             <div css={STYLES_CENTER}>
-
+              <br />
               <System.Logo height="128px" url="/static/eye4.gif" /> <br />
 
               {this.state.playing ?
-                <div css={STYLES_MENU}
-                  onClick={this.handlePlayPause}> >> STOP STREAM
+                <div css={STYLES_MENU} onClick={this.handlePlayPause}>
+                  || STOP STREAM
                 </div>
                 :
-                <div css={STYLES_MENU}
-                  onClick={this.handlePlayPause}> >> START STREAM
+                <div css={STYLES_MENU} onClick={this.handlePlayPause}>
+                  >> START STREAM
                 </div>
               }
 
@@ -202,8 +198,10 @@ export default class StreamPage extends React.Component {
                   <div css={STYLES_GREEN}>
                     Run time: 0:01
                   </div>
-                  <br />
-                  {name} - {artist} ({year}) <br />
+                  <br /><br />
+                  {name} <br />
+                  [Artist] {artist} <br />
+                  [Year] {year} <br />
                   <a target="_blank" href={discogs}>Discogs</a>
                 </div>
               }
@@ -214,13 +212,13 @@ export default class StreamPage extends React.Component {
               onPlay={this.handlePlay}
               playing={playing}
               onEnded={this.handleEnded}
-
             />
-
-
           </span>
 
+          <div css={STYLES_NOISE}></div>
+
         </div>
+
       </React.Fragment>
     );
   }
