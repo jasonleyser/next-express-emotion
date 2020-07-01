@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "No Mercy",
+    "artist": "Rowdy",
+    "year": 1998,
+    "hash": "QmbbyE5wggUCRSdRnKVgWNBS5t4gvyWE5fvFPCuWgQXXRp",
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681"
+  },
+  {
+    "id": 2,
+    "name": "Hidden Insight",
+    "artist": "Brass Tacks",
+    "year": 1996,
+    "hash": "QmZ8gKaEC7AongCiWvBQdMkSqXUgVG2gJgMAgzwfYFGQJi",
+    "discogs": "Brass-Tacks-Ice-Breaker-Classic/release/659726"
+  },
+  {
+    "id": 3,
+    "name": "Da Bomb Baby",
+    "artist": "Godfather Don",
+    "year": 1998,
+    "hash": "QmY8Bmk4WXE52oyzrW357822FX7B211rVmN24UqojwVb6X",
+    "discogs": "Godfather-Don-Fame-Da-Bomb-Baby/release/227549"
+  },
+  {
+    "id": 4,
+    "name": "Presha Points",
+    "artist": "Presha",
+    "year": 1997,
+    "hash": "QmPTNus3sjonqWT87Co9oFbc59bDaSMGuoPJLaNiG595bc",
+    "discogs": "Presha-Presha-Points-/release/6420145"
+  },
+  {
+    "id": 5,
+    "name": "Scoob Rock",
+    "artist": "The Marvelous",
+    "year": 1999,
+    "hash": "QmYgP6RxBZoziGxYAMbzce4iYf7CGL9Y68NvRfQXsnUQuM",
+    "discogs": "Scoob-Rock-Aka-Grandemperial-The-EP-Falling-Star/release/1515965"
+  },
+  {
+    "id": 6,
+    "name": "Favorable Fluids",
+    "artist": "Lower Level",
+    "year": 1995,
+    "hash": "Qmc2S3N5HktTWMs9ZrLd9kLh3qfeT5s19hpTDbr5GNEF8y",
+    "discogs": "Lower-Level-Top-Notch-Favorable-Fluids/release/2236270"
+  }
+]
