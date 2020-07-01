@@ -83,7 +83,7 @@ export default class StreamPage extends React.Component {
   state = {
     started: false,
     playing: false,
-    song_url: '../public/startup.wav',
+    song_url: 'https://ipfs.io/ipfs/QmNgddwXi14sB1brV4R1URriAKirYXXGg3FAyG5zBxKReu',
     name: null,
     artist: null,
     year: null,
