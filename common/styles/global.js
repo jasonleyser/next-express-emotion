@@ -32,6 +32,7 @@ export default () => css`
   @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
   html, body {
+    height: 100%;
     background: ${Constants.colors.white};
     color: ${Constants.colors.green};
     font-size: 16px;
@@ -39,12 +40,12 @@ export default () => css`
   }
 
   a {
-    color: ${Constants.colors.green};
+    color: ${Constants.colors.white};
   }
 
   a:hover {
-    color: ${Constants.colors.black};
-    background: ${Constants.colors.green};
+    color: ${Constants.colors.white};
+    background: ${Constants.colors.red};
   }
 
 `;

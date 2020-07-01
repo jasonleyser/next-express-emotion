@@ -2,69 +2,39 @@ import * as React from "react";
 import * as Constants from "~/common/constants";
 import * as System from "~/components";
 import ReactPlayer from "react-player";
+import Typist from 'react-typist';
+import data from '~/common/songlist.json';
+
 
 import Head from "next/head";
-
 
 import { css } from "@emotion/react";
 
 const STYLES_LAYOUT_LEFT = css`
-  height: calc(100vh - ${Constants.sizes.navigation}px);
-  width: ${Constants.sizes.sidebar}%;
-
-  background-color: ${Constants.colors.black_secondary};
-
-  padding: 24px 24px 24px 24px;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #101010, #101010, #101010, #101010, #101010, #131313, #161616, #181819, #1e1e1f, #232426, #292a2d, #2e3034);
   font-size: 2rem;
-  text-shadow: 0 0 2px ${Constants.colors.green};
-
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-`;
-
-const STYLES_LAYOUT_RIGHT = css`
-  height: calc(100vh - ${Constants.sizes.navigation}px);
-  min-width: 20%;
-  width: ${Constants.sizes.sidebar}%;
-  padding: 24px 24px 24px 24px;
-  background: ${Constants.colors.black};
-  font-size: 2rem;
-  overflow-y: scroll;
-
-  background-image: url("https://media1.giphy.com/media/LqDEIKfIm5DtvPXPrf/giphy.gif?cid=ecf05e47fc05d1d1b4ea5de4d57a283f946122dcf6fe8dbf&rid=giphy.gif");
-  background-size: cover;
+  color: ${Constants.colors.grey};
+  text-shadow: 0 0 2px ${Constants.colors.grey};
+  background-position: center;
   background-repeat: no-repeat;
-
-  scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  :hover {
-    background-image: url("https://media3.giphy.com/media/lWDgxXQXFXh7O/giphy.gif?cid=ecf05e476a0936a404af5f3f3b63717732a79b7398a1e83f&rid=giphy.gif");
-  }
-
+  background-size: cover;
+  text-align: center;
 `;
 
-const STYLES_NAVIGATION = css`
-  height: ${Constants.sizes.navigation}px;
-  padding: 0 0 0 0;
-  background: ${Constants.colors.black_secondary};
-  font-size: 2rem;
-  border-bottom: 1px solid ${Constants.colors.green};
+const STYLES_CENTER = css`
+  position: absolute;
+  width: 40%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 const STYLES_LAYOUT = css`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
 `;
 
 const STYLES_NOISE = css`
@@ -98,25 +68,57 @@ const STYLES_OVERLAY = css`
 const STYLES_MENU = css`
   :hover{
     cursor: pointer;
-    color: ${Constants.colors.black};
-    background: ${Constants.colors.red};
-    text-shadow: 0 0 1px ${Constants.colors.black};
+    color: ${Constants.colors.white};
+background-image: linear-gradient(to bottom, #f9014d, #f3005b, #ea0469, #e01474, #d5217f);
+    text-shadow: 0 0 1px ${Constants.colors.white};
   }
 `;
 
-export default class IndexPage extends React.Component {
+const STYLES_GREEN = css`
+  color: ${Constants.colors.green_secondary};
+`;
+
+export default class StreamPage extends React.Component {
 
   state = {
+    started: false,
     playing: false,
-    radio_url: 'https://s4.radio.co/s76212900f/listen',
+    song_url: '../public/startup.wav',
+    name: null,
+    artist: null,
+    year: null,
+    discogs: null,
+    text: 'Stream is initilized...'
+  }
+
+  handlePlayPause = () => {
+    console.log('Play/pause')
+    this.setState({
+      playing: !this.state.playing,
+      text: 'starting...'
+    })
+  }
+
+  handleEnded = () => {
+    console.log('The song has ended')
+    console.log(data);
+
+    var next = data[Math.floor(Math.random()*data.length)];
+
+    this.setState({
+      song_url: "https://ipfs.io/ipfs/" + next.hash,
+      name: next.name,
+      artist: next.artist,
+      discogs: "https://www.discogs.com/" + next.discogs,
+      year: next.year,
+      playing: true,
+    })
+    console.log(this.state);
   }
 
   handlePlay = () => {
-    this.setState({ radio_url: 'https://s4.radio.co/s76212900f/listen', playing: true });
-  }
-
-  handleStop = () => {
-    this.setState({ radio_url: null, playing: false })
+    console.log('Start playing')
+    this.setState({ playing: true })
   }
 
   render() {
@@ -124,7 +126,7 @@ export default class IndexPage extends React.Component {
     const description =
       "minimal example for a full client server web application with next, express, and emotion.";
     const url = "https://github.com/jimmylee/next-express-emotion";
-
+    const { song_url, playing, name, artist, year, discogs, text } = this.state
     return (
       <React.Fragment>
         <Head>
@@ -169,44 +171,52 @@ export default class IndexPage extends React.Component {
         <div css={STYLES_OVERLAY}></div>
         <div css={STYLES_NOISE}></div>
 
-        <nav css={STYLES_NAVIGATION}>
-          <img height="64px" src="/static/logo 13.png" />
-        </nav>
-
         <div css={STYLES_LAYOUT}>
 
           <span css={STYLES_LAYOUT_LEFT}>
 
-            {this.state.playing ?
-              <div css={STYLES_MENU}
-                onClick={this.handleStop}> >> STOP STREAM
-              </div>
-              :
-              <div css={STYLES_MENU}
-                onClick={this.handlePlay}> >> START STREAM
-              </div>
-            }
+            <div css={STYLES_CENTER}>
 
-            <div css={STYLES_MENU}>
-              >> NEXT STATION
+              <System.Logo height="128px" url="/static/eye4.gif" /> <br />
+
+              {this.state.playing ?
+                <div css={STYLES_MENU}
+                  onClick={this.handlePlayPause}> >> STOP STREAM
+                </div>
+                :
+                <div css={STYLES_MENU}
+                  onClick={this.handlePlayPause}> >> START STREAM
+                </div>
+              }
+
+              <br />
+
+              {name === null ?
+                <div css={STYLES_GREEN}>
+                  <Typist>
+                      <span>{text}</span>
+                  </Typist>
+                </div>
+             :
+                <div>
+                  <div css={STYLES_GREEN}>
+                    Run time: 0:01
+                  </div>
+                  <br />
+                  {name} - {artist} ({year}) <br />
+                  <a target="_blank" href={discogs}>Discogs</a>
+                </div>
+              }
             </div>
 
-            <br /> <br />
-
-            <System.GetData
-              url="https://public.radio.co/stations/s76212900f/status"
-            />
-
-          </span>
-
-          <span css={STYLES_LAYOUT_RIGHT}>
-            LIVE
-
             <ReactPlayer
-                url={this.state.radio_url}
-                playsinline='true'
-                playing={this.state.playing}
+              url={song_url}
+              onPlay={this.handlePlay}
+              playing={playing}
+              onEnded={this.handleEnded}
+
             />
+
 
           </span>
 

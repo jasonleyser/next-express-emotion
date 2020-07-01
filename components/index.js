@@ -78,3 +78,31 @@ export class DisplayData extends React.Component {
       );
    }
 }
+
+const STYLES_LOGO = css`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(1px);
+
+  :hover{
+    transform: scale(1.25);
+    transition: transform .3s;
+    cursor:crosshair;
+  }
+  :after{
+    transform: scale(1);
+    transition: transform .2s;
+  }
+`;
+
+export class Logo extends React.Component {
+   render() {
+      return (
+        <img
+          css={STYLES_LOGO}
+          height={this.props.height}
+          src={this.props.url} />
+      );
+   }
+}
