@@ -41,7 +41,7 @@ const STYLES_NOISE = css`
   width: 100%;
   height: 100%;
   background-size: auto 4px;
-  background-image: url("../public/static/static.gif");
+  background-image: url("https://ipfs.io/ipfs/Qmc6gtESk3ztiFjrToPAxUbfepXAQHTWSk6HGW5xiKYVAe");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -85,7 +85,9 @@ export default class StreamPage extends React.Component {
     artist: null,
     year: null,
     discogs: null,
-    text: 'Stream is initilized...'
+    text: 'Stream is initilized...',
+    playerWidth: 0,
+    playerHeight: 0
   }
 
   handlePlayPause = () => {
@@ -123,7 +125,7 @@ export default class StreamPage extends React.Component {
     const description =
       "minimal example for a full client server web application with next, express, and emotion.";
     const url = "https://github.com/jimmylee/next-express-emotion";
-    const { song_url, playing, name, artist, year, discogs, text } = this.state
+    const { song_url, playing, name, artist, year, discogs, text, playerWidth, playerHeight } = this.state
     return (
       <React.Fragment>
         <Head>
@@ -169,6 +171,15 @@ export default class StreamPage extends React.Component {
 
         <div css={STYLES_LAYOUT}>
 
+        <ReactPlayer
+          url={song_url}
+          onPlay={this.handlePlay}
+          playing={playing}
+          onEnded={this.handleEnded}
+          width={playerWidth}
+          height={playerHeight}
+        />
+
           <span css={STYLES_LAYOUT_LEFT}>
 
             <div css={STYLES_CENTER}>
@@ -207,12 +218,6 @@ export default class StreamPage extends React.Component {
               }
             </div>
 
-            <ReactPlayer
-              url={song_url}
-              onPlay={this.handlePlay}
-              playing={playing}
-              onEnded={this.handleEnded}
-            />
           </span>
 
           <div css={STYLES_NOISE}></div>
