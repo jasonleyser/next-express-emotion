@@ -41,7 +41,7 @@ const STYLES_NOISE = css`
   width: 100%;
   height: 100%;
   background-size: auto 4px;
-  background-image: url("~/public/static/static.gif");
+  background-image: url("/public/static/static.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -186,7 +186,7 @@ export default class StreamPage extends React.Component {
 
               {this.state.playing ?
                 <div css={STYLES_MENU} onClick={this.handlePlayPause}>
-                  || STOP STREAM
+                || STOP STREAM
                 </div>
                 :
                 <div css={STYLES_MENU} onClick={this.handlePlayPause}>
