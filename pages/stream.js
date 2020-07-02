@@ -218,8 +218,6 @@ export default class StreamPage extends React.Component {
 
           </span>
 
-          <div css={STYLES_NOISE}></div>
-
         </div>
 
       </React.Fragment>
