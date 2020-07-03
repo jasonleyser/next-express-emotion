@@ -6,10 +6,10 @@ export const sizes = {
 export const colors = {
   white: "rgba(255, 255, 255, 1)",
   black: "rgba(0, 0, 0, 1)",
-  grey: "#F2ECFF",
+  grey: "#DFE0DF",
   black_secondary: "#101010",
-  red: "#e9046a",
-  green_secondary: "rgba(74, 246, 38, 1)",
+  red: "#aa832f",
+  green_secondary: "#3C794E",
   green_third: "rgba(67, 151, 36, 1)",
   pink: "rgba(231,45,238, 1)",
 };

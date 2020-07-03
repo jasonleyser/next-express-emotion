@@ -1,6 +1,8 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
 import { css } from "@emotion/react";
+import ReactPlayer from "react-player";
+import data from '~/common/songlist.json';
 
 const STYLES_WHITE = css`
   color: ${Constants.colors.pink };
@@ -83,20 +85,25 @@ const STYLES_LOGO = css`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: blur(1px);
 
   :hover{
-    transform: scale(1.25);
-    transition: transform .3s;
     cursor:crosshair;
-  }
-  :after{
-    transform: scale(1);
-    transition: transform .2s;
   }
 `;
 
 export class Logo extends React.Component {
+   render() {
+      return (
+        <img
+          css={STYLES_LOGO}
+          height={this.props.height}
+          src={this.props.url} />
+      );
+   }
+}
+
+
+export class Player extends React.Component {
    render() {
       return (
         <img

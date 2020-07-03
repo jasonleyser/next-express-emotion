@@ -13,10 +13,10 @@ import { css } from "@emotion/react";
 const STYLES_LAYOUT_LEFT = css`
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom, #101010, #101010, #101010, #101010, #101010, #131313, #161616, #181819, #1e1e1f, #232426, #292a2d, #2e3034);
+  background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #070606, #0d0b0c, #121011, #1a181a, #212022, #28282b, #2e3034);
   font-size: 2rem;
   color: ${Constants.colors.grey};
-  text-shadow: 0 0 2px ${Constants.colors.grey};
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,11 +41,11 @@ const STYLES_NOISE = css`
   width: 100%;
   height: 100%;
   background-size: auto 4px;
-  background-image: url("/public/static/static.gif");
+  background-image: url("/static/static.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  opacity: .02;
+  opacity: .01;
 `;
 
 const STYLES_OVERLAY = css`
@@ -85,7 +85,11 @@ export default class StreamPage extends React.Component {
     artist: null,
     year: null,
     discogs: null,
+    inline: true,
+  }
 
+  ref = player => {
+    this.player = player
   }
 
   handlePlayPause = () => {
@@ -111,6 +115,8 @@ export default class StreamPage extends React.Component {
       playing: true,
     })
     console.log(this.state);
+
+    console.log(this.player.getDuration())
   }
 
   handlePlay = () => {
@@ -118,12 +124,18 @@ export default class StreamPage extends React.Component {
     this.setState({ playing: true })
   }
 
+  handleTime = () => {
+    console.log(this.player.getDuration())
+  }
+
   render() {
     const title = "next-express-emotion";
     const description =
       "minimal example for a full client server web application with next, express, and emotion.";
     const url = "https://github.com/jimmylee/next-express-emotion";
-    const { song_url, playing, name, artist, year, discogs, text } = this.state
+    const { song_url, playing, name, artist, year, discogs, text, inline } = this.state
+
+
     return (
       <React.Fragment>
         <Head>
@@ -170,19 +182,24 @@ export default class StreamPage extends React.Component {
         <div css={STYLES_LAYOUT}>
 
         <ReactPlayer
+          ref={this.ref}
           url={song_url}
           onPlay={this.handlePlay}
           playing={playing}
           onEnded={this.handleEnded}
           width="0"
           height="0"
+          playsinline={inline}
         />
 
           <span css={STYLES_LAYOUT_LEFT}>
 
             <div css={STYLES_CENTER}>
+              <System.Logo height="290px" url="/static/window.png" />
+
               <br />
-              <System.Logo height="128px" url="/static/eye4.gif" /> <br />
+
+              <br />
 
               {this.state.playing ?
                 <div css={STYLES_MENU} onClick={this.handlePlayPause}>
@@ -205,7 +222,7 @@ export default class StreamPage extends React.Component {
              :
                 <div>
                   <div css={STYLES_GREEN}>
-                    Run time: 0:01
+                    Run time: {this.player.getDuration()}
                   </div>
                   <br /><br />
                   {name} <br />
@@ -217,6 +234,8 @@ export default class StreamPage extends React.Component {
             </div>
 
           </span>
+
+          <div css={STYLES_NOISE}></div>
 
         </div>
 
