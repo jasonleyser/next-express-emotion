@@ -77,26 +77,26 @@ const STYLES_GREEN = css`
 
 export default class StreamPage extends React.Component {
 
-  state = {
-    started: false,
-    playing: false,
-    song_url: 'https://ipfs.io/ipfs/QmNgddwXi14sB1brV4R1URriAKirYXXGg3FAyG5zBxKReu',
-    name: null,
-    artist: null,
-    year: null,
-    discogs: null,
-    inline: true,
-  }
 
-  ref = player => {
-    this.player = player
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      started: false,
+      playing: false,
+      song_url: 'https://ipfs.io/ipfs/QmNgddwXi14sB1brV4R1URriAKirYXXGg3FAyG5zBxKReu',
+      name: null,
+      artist: null,
+      year: null,
+      discogs: null,
+      inline: true,
+    }
   }
 
   handlePlayPause = () => {
     console.log('Play/pause')
     this.setState({
       playing: !this.state.playing,
-      text: 'starting...'
     })
   }
 
@@ -115,8 +115,6 @@ export default class StreamPage extends React.Component {
       playing: true,
     })
     console.log(this.state);
-
-    console.log(this.player.getDuration())
   }
 
   handlePlay = () => {
@@ -124,17 +122,12 @@ export default class StreamPage extends React.Component {
     this.setState({ playing: true })
   }
 
-  handleTime = () => {
-    console.log(this.player.getDuration())
-  }
-
   render() {
     const title = "next-express-emotion";
     const description =
       "minimal example for a full client server web application with next, express, and emotion.";
     const url = "https://github.com/jimmylee/next-express-emotion";
-    const { song_url, playing, name, artist, year, discogs, text, inline } = this.state
-
+    const { song_url, playing, name, artist, year, discogs, inline } = this.state;
 
     return (
       <React.Fragment>
@@ -181,21 +174,20 @@ export default class StreamPage extends React.Component {
 
         <div css={STYLES_LAYOUT}>
 
-        <ReactPlayer
-          ref={this.ref}
-          url={song_url}
-          onPlay={this.handlePlay}
-          playing={playing}
-          onEnded={this.handleEnded}
-          width="0"
-          height="0"
-          playsinline={inline}
-        />
+          <ReactPlayer
+            url={song_url}
+            onPlay={this.handlePlay}
+            playing={playing}
+            onEnded={this.handleEnded}
+            width="0"
+            height="0"
+            playsinline={inline}
+          />
 
           <span css={STYLES_LAYOUT_LEFT}>
 
             <div css={STYLES_CENTER}>
-              <System.Logo height="290px" url="/static/window.png" />
+              <System.Logo height="236px" url="/static/window.png" />
 
               <br />
 
@@ -222,7 +214,7 @@ export default class StreamPage extends React.Component {
              :
                 <div>
                   <div css={STYLES_GREEN}>
-                    Run time: {this.player.getDuration()}
+                    Run time: 0:001
                   </div>
                   <br /><br />
                   {name} <br />
