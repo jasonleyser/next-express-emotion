@@ -46,5 +46,45 @@
     "year": 1995,
     "hash": "Qmc2S3N5HktTWMs9ZrLd9kLh3qfeT5s19hpTDbr5GNEF8y",
     "discogs": "Lower-Level-Top-Notch-Favorable-Fluids/release/2236270"
+  },
+  {
+    "id": 7,
+    "name": "Silence",
+    "artist": "SEC",
+    "year": 1999,
+    "hash": "QmUBYFFsn4Vi4ZeG6F4S6buaW7yD1KwPeonrRGjegiakYH",
+    "discogs": "SEC-Dark-City/release/3802481"
+  },
+  {
+    "id": 8,
+    "name": "Bleeding Hate",
+    "artist": "Parallax",
+    "year": 1994,
+    "hash": "QmbUpR4w9UNskFYVRUXktdQsT3LhoFYQTSzh4yAcmMBahr",
+    "discogs": "Parallax-Dont-Mean-Jak/release/586107"
+  },
+  {
+    "id": 9,
+    "name": "Gotta Get It",
+    "artist": "Ill Ko",
+    "year": 1998,
+    "hash": "QmPY5ZhC1aFfC5VMYeWdvePifsv2dfNVcVwtZaJkc3r4Pu",
+    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333"
+  },
+  {
+    "id": 10,
+    "name": "Hallucinations",
+    "artist": "Ill Ko",
+    "year": 1998,
+    "hash": "Qma5qZJs4HKWRDsknJK5f5ZoqdYJAYbRoFbMgXAiufsBBM",
+    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333"
+  },
+  {
+    "id": 11,
+    "name": "Pass it!",
+    "artist": "Ghetto Dawgs",
+    "year": 1998,
+    "hash": "QmSjwmKq2gP6GTGtDrpwrhUQjPM1k66wwhSoyogN6NJDzd",
+    "discogs": "Ghetto-Dawgz-Ghetto-Dawgz/release/1810309"
   }
 ]

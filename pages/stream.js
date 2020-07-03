@@ -102,7 +102,6 @@ export default class StreamPage extends React.Component {
 
   handleEnded = () => {
     console.log('The song has ended')
-    console.log(data);
 
     var next = data[Math.floor(Math.random()*data.length)];
 
