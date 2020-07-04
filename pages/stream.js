@@ -150,7 +150,7 @@ export default class StreamPage extends React.Component {
     this.setState({ runtime: rnt + 1 });
 
     if(state.playedSeconds > this.state.end)  {
-      console.log('its time!!!');
+      console.log('Last 10 remaining');
 
       if(this.state.transition === false) {
         this.setState({ transition: true })
@@ -171,7 +171,7 @@ export default class StreamPage extends React.Component {
 
     }else{
 
-      console.log('its not time...');
+      console.log('More than 10 remaining');
       this.setState({ transition: false })
 
     }
@@ -240,12 +240,11 @@ export default class StreamPage extends React.Component {
             onPlay={this.handlePlay}
             playing={playing}
             onEnded={this.handleEnded}
-            width="800"
-            height="800"
+            width="0"
+            height="0"
             playsinline={inline}
             onProgress={this.handleProgress}
             onDuration={this.handleDuration}
-            controls
           />
 
           <span css={STYLES_LAYOUT_LEFT}>
