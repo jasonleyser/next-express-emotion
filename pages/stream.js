@@ -155,14 +155,14 @@ export default class StreamPage extends React.Component {
       if(this.state.transition === false) {
         this.setState({ transition: true })
 
-        var transitionSound = new Howl({
-          src: ['/public/static/horn.wav'],
-          volume: 0.75,
-          rate: 0.75,
-        });
+        //var transitionSound = new Howl({
+        //  src: ['/public/static/horn.wav'],
+        //  volume: 0.75,
+        //  rate: 0.75,
+        //});
 
-        const x = Math.round(100 * (2.5 - (Math.random() * 5))) / 100;
-        const y = Math.round(100 * (2.5 - (Math.random() * 5))) / 100;
+        //const x = Math.round(100 * (2.5 - (Math.random() * 5))) / 100;
+        //const y = Math.round(100 * (2.5 - (Math.random() * 5))) / 100;
 
         //transitionSound.pos(x, y);
         //transitionSound.play();
