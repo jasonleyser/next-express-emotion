@@ -3,7 +3,10 @@ import * as Constants from "~/common/constants";
 import * as System from "~/components";
 import ReactPlayer from "react-player";
 import Typist from 'react-typist';
+import {Howl, Howler} from 'howler';
+
 import data from '~/common/songlist.json';
+
 
 
 import Head from "next/head";
@@ -75,6 +78,14 @@ const STYLES_GREEN = css`
   color: ${Constants.colors.green_secondary};
 `;
 
+function display (seconds) {
+  const format = val => `0${Math.floor(val)}`.slice(-2)
+  const hours = seconds / 3600
+  const minutes = (seconds % 3600) / 60
+
+  return [hours, minutes, seconds % 60].map(format).join(':')
+}
+
 export default class StreamPage extends React.Component {
 
 
@@ -90,6 +101,10 @@ export default class StreamPage extends React.Component {
       year: null,
       discogs: null,
       inline: true,
+      played: null,
+      end: null,
+      runtime: 0,
+      transition: false,
     }
   }
 
@@ -103,7 +118,7 @@ export default class StreamPage extends React.Component {
   handleEnded = () => {
     console.log('The song has ended')
 
-    var next = data[Math.floor(Math.random()*data.length)];
+    const next = data[Math.floor(Math.random()*data.length)];
 
     this.setState({
       song_url: "https://ipfs.io/ipfs/" + next.hash,
@@ -111,7 +126,9 @@ export default class StreamPage extends React.Component {
       artist: next.artist,
       discogs: "https://www.discogs.com/" + next.discogs,
       year: next.year,
+      end: next.end,
       playing: true,
+      transition: false,
     })
     console.log(this.state);
   }
@@ -121,12 +138,56 @@ export default class StreamPage extends React.Component {
     this.setState({ playing: true })
   }
 
+  handleProgress = (state) => {
+    console.log({state}, state);
+    this.setState({ state });
+
+    console.log(this.state.end);
+    console.log(state.playedSeconds);
+
+    var rnt = this.state.runtime
+
+    this.setState({ runtime: rnt + 1 });
+
+    if(state.playedSeconds > this.state.end)  {
+      console.log('its time!!!');
+
+      if(this.state.transition === false) {
+        this.setState({ transition: true })
+
+        var transitionSound = new Howl({
+          src: ['/public/static/horn.wav'],
+          volume: 0.75,
+          rate: 0.75,
+        });
+
+        const x = Math.round(100 * (2.5 - (Math.random() * 5))) / 100;
+        const y = Math.round(100 * (2.5 - (Math.random() * 5))) / 100;
+
+        //transitionSound.pos(x, y);
+        //transitionSound.play();
+
+      }
+
+    }else{
+
+      console.log('its not time...');
+      this.setState({ transition: false })
+
+    }
+  }
+
+  ref = player => {
+    this.player = player
+  }
+
+
   render() {
     const title = "next-express-emotion";
     const description =
       "minimal example for a full client server web application with next, express, and emotion.";
     const url = "https://github.com/jimmylee/next-express-emotion";
-    const { song_url, playing, name, artist, year, discogs, inline } = this.state;
+    const { song_url, playing, name, artist, year, discogs, inline, played, runtime } = this.state;
 
     return (
       <React.Fragment>
@@ -174,13 +235,17 @@ export default class StreamPage extends React.Component {
         <div css={STYLES_LAYOUT}>
 
           <ReactPlayer
+            ref={this.ref}
             url={song_url}
             onPlay={this.handlePlay}
             playing={playing}
             onEnded={this.handleEnded}
-            width="0"
-            height="0"
+            width="800"
+            height="800"
             playsinline={inline}
+            onProgress={this.handleProgress}
+            onDuration={this.handleDuration}
+            controls
           />
 
           <span css={STYLES_LAYOUT_LEFT}>
@@ -213,12 +278,11 @@ export default class StreamPage extends React.Component {
              :
                 <div>
                   <div css={STYLES_GREEN}>
-                    Run time: 0:001
+                    Run time: { display(runtime) }
                   </div>
                   <br /><br />
-                  {name} <br />
+                  {name} ({year})<br />
                   [Artist] {artist} <br />
-                  [Year] {year} <br />
                   <a target="_blank" href={discogs}>Discogs</a>
                 </div>
               }

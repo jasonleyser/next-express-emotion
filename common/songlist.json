@@ -5,7 +5,8 @@
     "artist": "Rowdy",
     "year": 1998,
     "hash": "QmbbyE5wggUCRSdRnKVgWNBS5t4gvyWE5fvFPCuWgQXXRp",
-    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681"
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681",
+    "end": null
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "artist": "Brass Tacks",
     "year": 1996,
     "hash": "QmZ8gKaEC7AongCiWvBQdMkSqXUgVG2gJgMAgzwfYFGQJi",
-    "discogs": "Brass-Tacks-Ice-Breaker-Classic/release/659726"
+    "discogs": "Brass-Tacks-Ice-Breaker-Classic/release/659726",
+    "end": 233
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "artist": "Godfather Don",
     "year": 1998,
     "hash": "QmY8Bmk4WXE52oyzrW357822FX7B211rVmN24UqojwVb6X",
-    "discogs": "Godfather-Don-Fame-Da-Bomb-Baby/release/227549"
+    "discogs": "Godfather-Don-Fame-Da-Bomb-Baby/release/227549",
+    "end": 237
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "artist": "Presha",
     "year": 1997,
     "hash": "QmPTNus3sjonqWT87Co9oFbc59bDaSMGuoPJLaNiG595bc",
-    "discogs": "Presha-Presha-Points-/release/6420145"
+    "discogs": "Presha-Presha-Points-/release/6420145",
+    "end": null
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "artist": "Scoob Rock",
     "year": 1999,
     "hash": "QmYgP6RxBZoziGxYAMbzce4iYf7CGL9Y68NvRfQXsnUQuM",
-    "discogs": "Scoob-Rock-Aka-Grandemperial-The-EP-Falling-Star/release/1515965"
+    "discogs": "Scoob-Rock-Aka-Grandemperial-The-EP-Falling-Star/release/1515965",
+    "end": null
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "artist": "Lower Level",
     "year": 1995,
     "hash": "Qmc2S3N5HktTWMs9ZrLd9kLh3qfeT5s19hpTDbr5GNEF8y",
-    "discogs": "Lower-Level-Top-Notch-Favorable-Fluids/release/2236270"
+    "discogs": "Lower-Level-Top-Notch-Favorable-Fluids/release/2236270",
+    "end": null
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "artist": "SEC",
     "year": 1999,
     "hash": "QmUBYFFsn4Vi4ZeG6F4S6buaW7yD1KwPeonrRGjegiakYH",
-    "discogs": "SEC-Dark-City/release/3802481"
+    "discogs": "SEC-Dark-City/release/3802481",
+    "end": 325
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "artist": "Parallax",
     "year": 1994,
     "hash": "QmbUpR4w9UNskFYVRUXktdQsT3LhoFYQTSzh4yAcmMBahr",
-    "discogs": "Parallax-Dont-Mean-Jak/release/586107"
+    "discogs": "Parallax-Dont-Mean-Jak/release/586107",
+    "end": null
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "artist": "Ill Ko",
     "year": 1998,
     "hash": "QmPY5ZhC1aFfC5VMYeWdvePifsv2dfNVcVwtZaJkc3r4Pu",
-    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333"
+    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333",
+    "end": null
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "artist": "Ill Ko",
     "year": 1998,
     "hash": "Qma5qZJs4HKWRDsknJK5f5ZoqdYJAYbRoFbMgXAiufsBBM",
-    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333"
+    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333",
+    "end": 317
   },
   {
     "id": 11,
@@ -85,6 +95,89 @@
     "artist": "Ghetto Dawgs",
     "year": 1998,
     "hash": "QmSjwmKq2gP6GTGtDrpwrhUQjPM1k66wwhSoyogN6NJDzd",
-    "discogs": "Ghetto-Dawgz-Ghetto-Dawgz/release/1810309"
+    "discogs": "Ghetto-Dawgz-Ghetto-Dawgz/release/1810309",
+    "end": null
+  },
+  {
+    "id": 12,
+    "name": "Hood Life",
+    "artist": "Tasc 4orce",
+    "year": 1995,
+    "hash": "QmbXo6nq5ufiWen95Jnir5Vp2JaLJWjZeHd8UDdNvdSnox",
+    "discogs": "Tasc-4orce-Time-Ta-Shine/release/7191025",
+    "end": null
+  },
+  {
+    "id": 13,
+    "name": "Time Ta Shine",
+    "artist": "Tasc 4orce",
+    "year": 1995,
+    "hash": "QmaRAD3QwfWCbkpnaD9dMGMoMnvNjnraiZsRL2s9gs2RdR",
+    "discogs": "Tasc-4orce-Time-Ta-Shine/release/7191025",
+    "end": 213
+  },
+  {
+    "id": 14,
+    "name": "Butta Fly High",
+    "artist": "Liquid Knights",
+    "year": 1999,
+    "hash": "QmSge36vRVz4LESBMfsynJyQJkJjbnem2ppK4JKe8SYWZe",
+    "discogs": "Various-Tha-Beginning/release/9586068",
+    "end": null
+  },
+  {
+    "id": 15,
+    "name": "Meet the Mayor",
+    "artist": "100X",
+    "year": 1996,
+    "hash": "QmRpte2The43TYXMWF2dYwYAndYKkfjYdagi4brkmvENuw",
+    "discogs": "100X-Fast-Loot-Tactics/release/993057",
+    "end": 233
+  },
+  {
+    "id": 16,
+    "name": "Two Deadly Sins",
+    "artist": "Vooodu",
+    "year": 1996,
+    "hash": "QmPYKXbftVmRsiLsyc4Y93AQd7Vd7n6LJWVod5tA2HaUxC",
+    "discogs": "Vooodu-One-Life-To-Live-Two-Deadly-Sins/release/318819",
+    "end": null
+  },
+  {
+    "id": 17,
+    "name": "Hear Me Think",
+    "artist": "Abyssmen",
+    "year": 1997,
+    "hash": "QmSFiBKCM4WE2K8UeCgWDgysxfESjspk3EQ8eR68G2wcs8",
+    "discogs": "Abyssmen-Nightcrawlers/release/7732226",
+    "end": null
+  },
+  {
+    "id": 18,
+    "name": "Terry Bogard",
+    "artist": "108 Dragons",
+    "year": 1996,
+    "hash": "Qmb7iQmJ4ccZ4JmHkXPNqp9LhmpcoGQVDdkAZ8p3x3JJk1",
+    "discogs": "108-Dragons-108-Dragons/release/12174690",
+    "end": 181
+  },
+  {
+    "id": 19,
+    "name": "This Is How I Feel",
+    "artist": "M'stro",
+    "year": 1998,
+    "hash": "QmPcgbjMLSPzZU35B3cb4PwXXMLiCoJpsu3iz1NNR5MwSi",
+    "discogs": "Mstro-This-Is-How-I-Feel/release/3342163",
+    "end": null
+  }
+  ,
+  {
+    "id": 19,
+    "name": "Bailys and Tequila",
+    "artist": "M'stro",
+    "year": 1998,
+    "hash": "QmTjvdZPYBrU4uFPUDp9LpYEuvakfVEGz7K8zKojQBfgz5",
+    "discogs": "Mstro-This-Is-How-I-Feel/release/3342163",
+    "end": null
   }
 ]
