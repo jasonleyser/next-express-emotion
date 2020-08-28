@@ -10,7 +10,6 @@ import Head from "next/head";
 import { css } from "@emotion/react";
 
 const STYLES_LAYOUT_LEFT = css`
-  height: 100vh;
   width: 100%;
   background-color: ${Constants.colors.black};
   background-image: url("paper.gif");
