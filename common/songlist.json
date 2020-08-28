@@ -6,17 +6,43 @@
     "year": 1998,
     "hash": "QmbbyE5wggUCRSdRnKVgWNBS5t4gvyWE5fvFPCuWgQXXRp",
     "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681",
-    "end": null
+    "cover": "Hurricane-Presents-Killertape-Vol-1.png",
+    "slug": "rowdy-no-mercy",
+    "end": null,
+    "udg": 30,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "awards": [
+      {
+        "name": "wu-tang-alternatives",
+        "icon": "instrumentals",
+        "times": "smoker-friendly"
+      }
+    ],
+    "featured": 2
   },
+
   {
     "id": 2,
     "name": "Hidden Insight",
-    "artist": "Brass Tacks",
+    "artist": "Brass Tracks",
     "year": 1996,
     "hash": "QmZ8gKaEC7AongCiWvBQdMkSqXUgVG2gJgMAgzwfYFGQJi",
-    "discogs": "Brass-Tacks-Ice-Breaker-Classic/release/659726",
-    "end": 233
+    "discogs": "Brass-Tracks-Ice-Breaker-Classic/release/659726",
+    "slug": "brass-tracks-hidden-insight",
+    "end": 233,
+    "udg": 55,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": 5
   },
+
   {
     "id": 3,
     "name": "Da Bomb Baby",
@@ -24,7 +50,15 @@
     "year": 1998,
     "hash": "QmY8Bmk4WXE52oyzrW357822FX7B211rVmN24UqojwVb6X",
     "discogs": "Godfather-Don-Fame-Da-Bomb-Baby/release/227549",
-    "end": 237
+    "slug": "godfather-don-da-bomb-baby",
+    "end": 237,
+    "udg": 75,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 4,
@@ -33,7 +67,15 @@
     "year": 1997,
     "hash": "QmPTNus3sjonqWT87Co9oFbc59bDaSMGuoPJLaNiG595bc",
     "discogs": "Presha-Presha-Points-/release/6420145",
-    "end": null
+    "slug": "presha-presha-points",
+    "end": null,
+    "udg": 95,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 5,
@@ -42,7 +84,15 @@
     "year": 1999,
     "hash": "QmYgP6RxBZoziGxYAMbzce4iYf7CGL9Y68NvRfQXsnUQuM",
     "discogs": "Scoob-Rock-Aka-Grandemperial-The-EP-Falling-Star/release/1515965",
-    "end": null
+    "slug": "scoob-rock-the-marvelous",
+    "end": null,
+    "udg": 10,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 6,
@@ -51,7 +101,15 @@
     "year": 1995,
     "hash": "Qmc2S3N5HktTWMs9ZrLd9kLh3qfeT5s19hpTDbr5GNEF8y",
     "discogs": "Lower-Level-Top-Notch-Favorable-Fluids/release/2236270",
-    "end": null
+    "slug": "lower-level-favorable-fluids",
+    "end": null,
+    "udg": 75,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 7,
@@ -60,7 +118,15 @@
     "year": 1999,
     "hash": "QmUBYFFsn4Vi4ZeG6F4S6buaW7yD1KwPeonrRGjegiakYH",
     "discogs": "SEC-Dark-City/release/3802481",
-    "end": 325
+    "slug": "sec-silence",
+    "end": 325,
+    "udg": 75,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": 4
   },
   {
     "id": 8,
@@ -69,7 +135,16 @@
     "year": 1994,
     "hash": "QmbUpR4w9UNskFYVRUXktdQsT3LhoFYQTSzh4yAcmMBahr",
     "discogs": "Parallax-Dont-Mean-Jak/release/586107",
-    "end": null
+    "cover": "https://img.discogs.com/F87VUN-wwU4huTSalwIYumy71a8=/fit-in/600x601/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-586107-1402119309-3996.jpeg.jpg",
+    "slug": "parallax-bleeding-hate",
+    "end": null,
+    "udg": 70,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": 1
   },
   {
     "id": 9,
@@ -78,7 +153,15 @@
     "year": 1998,
     "hash": "QmPY5ZhC1aFfC5VMYeWdvePifsv2dfNVcVwtZaJkc3r4Pu",
     "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333",
-    "end": null
+    "slug": "ill-ko-gotta-get-it",
+    "end": null,
+    "udg": 75,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": 3
   },
   {
     "id": 10,
@@ -87,16 +170,32 @@
     "year": 1998,
     "hash": "Qma5qZJs4HKWRDsknJK5f5ZoqdYJAYbRoFbMgXAiufsBBM",
     "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333",
-    "end": 317
+    "slug": "ill-ko-hallucinations",
+    "end": 317,
+    "udg": 40,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 11,
-    "name": "Pass it!",
+    "name": "Pass It!",
     "artist": "Ghetto Dawgs",
     "year": 1998,
     "hash": "QmSjwmKq2gP6GTGtDrpwrhUQjPM1k66wwhSoyogN6NJDzd",
     "discogs": "Ghetto-Dawgz-Ghetto-Dawgz/release/1810309",
-    "end": null
+    "slug": "ghetto-dawgs-pass-it",
+    "end": null,
+    "udg": 75,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 12,
@@ -105,7 +204,15 @@
     "year": 1995,
     "hash": "QmbXo6nq5ufiWen95Jnir5Vp2JaLJWjZeHd8UDdNvdSnox",
     "discogs": "Tasc-4orce-Time-Ta-Shine/release/7191025",
-    "end": null
+    "slug": "tasc-4orce-hood-life",
+    "end": null,
+    "udg": 15,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 13,
@@ -114,7 +221,15 @@
     "year": 1995,
     "hash": "QmaRAD3QwfWCbkpnaD9dMGMoMnvNjnraiZsRL2s9gs2RdR",
     "discogs": "Tasc-4orce-Time-Ta-Shine/release/7191025",
-    "end": 213
+    "slug": "tasc-4orce-time-ta-shine",
+    "end": 213,
+    "udg": 87,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 14,
@@ -123,7 +238,15 @@
     "year": 1999,
     "hash": "QmSge36vRVz4LESBMfsynJyQJkJjbnem2ppK4JKe8SYWZe",
     "discogs": "Various-Tha-Beginning/release/9586068",
-    "end": null
+    "slug": "liquid-knights-butta-fly-high",
+    "end": null,
+    "udg": 90,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 15,
@@ -132,7 +255,15 @@
     "year": 1996,
     "hash": "QmRpte2The43TYXMWF2dYwYAndYKkfjYdagi4brkmvENuw",
     "discogs": "100X-Fast-Loot-Tactics/release/993057",
-    "end": 233
+    "slug": "100X-meet-the-mayor",
+    "end": 233,
+    "udg": 55,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 16,
@@ -141,7 +272,15 @@
     "year": 1996,
     "hash": "QmPYKXbftVmRsiLsyc4Y93AQd7Vd7n6LJWVod5tA2HaUxC",
     "discogs": "Vooodu-One-Life-To-Live-Two-Deadly-Sins/release/318819",
-    "end": null
+    "slug": "vooodu-two-deadly-sins",
+    "end": null,
+    "udg": 35,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 17,
@@ -150,7 +289,15 @@
     "year": 1997,
     "hash": "QmSFiBKCM4WE2K8UeCgWDgysxfESjspk3EQ8eR68G2wcs8",
     "discogs": "Abyssmen-Nightcrawlers/release/7732226",
-    "end": null
+    "slug": "abyssmen-hear-me-think",
+    "end": null,
+    "udg": 55,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 18,
@@ -159,7 +306,15 @@
     "year": 1996,
     "hash": "Qmb7iQmJ4ccZ4JmHkXPNqp9LhmpcoGQVDdkAZ8p3x3JJk1",
     "discogs": "108-Dragons-108-Dragons/release/12174690",
-    "end": 181
+    "slug": "108-dragons-terry-bogard",
+    "end": 181,
+    "udg": 60,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
   },
   {
     "id": 19,
@@ -168,9 +323,16 @@
     "year": 1998,
     "hash": "QmPcgbjMLSPzZU35B3cb4PwXXMLiCoJpsu3iz1NNR5MwSi",
     "discogs": "Mstro-This-Is-How-I-Feel/release/3342163",
-    "end": null
-  }
-  ,
+    "slug": "mstro-this-is-how-i-feel",
+    "end": null,
+    "udg": 75,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
+  },
   {
     "id": 19,
     "name": "Bailys and Tequila",
@@ -178,6 +340,558 @@
     "year": 1998,
     "hash": "QmTjvdZPYBrU4uFPUDp9LpYEuvakfVEGz7K8zKojQBfgz5",
     "discogs": "Mstro-This-Is-How-I-Feel/release/3342163",
-    "end": null
+    "slug": "mstro-bailys-and-tequila",
+    "end": null,
+    "udg": 99,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
+  },
+  {
+    "id": 20,
+    "name": "Da Struggle Remix",
+    "artist": "Cane",
+    "year": "199X",
+    "hash": "Qmf1R2ZGXtdquByu33zaK62feNthKRJne3AxnmxutRXzPR",
+    "discogs": "Cane-Big-Booty-Btches/release/5282531",
+    "slug": "cane-da-struggle",
+    "end": null,
+    "udg": 99,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
+  },
+  {
+    "id": 21,
+    "name": "Paradox Remix",
+    "artist": "5E",
+    "year": "1998",
+    "hash": "Qmbq3P1y6a3GXJaWUR6ZV2bG3bDDfpCkShwsjKa7yDtDbg",
+    "discogs": "Various-Classic-Elements/release/1642453",
+    "slug": "5e-paradox-remix",
+    "end": null,
+    "udg": 90,
+    "streams": [
+      { "name": "wu-tang-alternatives" },
+      { "name": "instrumentals" },
+      { "name": "smoker-friendly" }
+    ],
+    "featured": null
+  },
+  {
+    "id": 22,
+    "name": "What's Ya Definition",
+    "artist": "Jace",
+    "year": "1998",
+    "hash": "QmWxfTMUu2PmxrDefNHRrCUVVkPz77WW4GiowjMpDXR3pF",
+    "discogs": "Various-Classic-Elements/release/1642453",
+    "slug": "whats-ya-definition",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise", "name": "main" }],
+    "featured": null
+  },
+  {
+    "id": 23,
+    "name": "Only When I'm High",
+    "artist": "Blak",
+    "year": "1998",
+    "hash": "QmcoDFuzXwiFqo1qtJCRgv6L8hnroyQz6CRdeGKPK5Fw5X",
+    "discogs": "Various-Classic-Elements/release/1642453",
+    "slug": "blak-only-when-im-high",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 24,
+    "name": "Crime Boss",
+    "artist": "NSV",
+    "year": "1996",
+    "hash": "QmcoDFuzXwiFqo1qtJCRgv6L8hnroyQz6CRdeGKPK5Fw5X",
+    "discogs": "Various-Crime-Scene-EP/release/5534904",
+    "slug": "nsv-crime-boss",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "ruckus" }],
+    "featured": null
+  },
+  {
+    "id": 25,
+    "name": "Russian Roulette",
+    "artist": "Big Cel",
+    "year": "1996",
+    "hash": "QmYkLgeD4hSZWv7vbhoyfWuUTRFDK3cHdwttEZUeXQgPkH",
+    "discogs": "Various-Crime-Scene-EP/release/5534904",
+    "slug": "big-cel-russian-roulette",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "ruckus" }],
+    "featured": null
+  },
+  {
+    "id": 26,
+    "name": "Supernatural",
+    "artist": "Tha Beggas",
+    "year": "1997",
+    "hash": "QmZvLwN2djAqvuuNuPZ5qwmENuxmgcEF2dZoNiHZ9nhukw",
+    "discogs": "Tha-Beggas-Super-Natural/release/1330166",
+    "slug": "tha-beggas-supernatural",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "wu-tang-alts", "name": "main" }],
+    "featured": null
+  },
+  {
+    "id": 27,
+    "name": "Storm Brewing",
+    "artist": "Tony Da Skitzo Ft. Brady",
+    "year": "1997",
+    "hash": "QmYqi1Za2n3311ss2K7f7xg3TAAWB6dCCc2WccNEa15wHa",
+    "discogs": "Tony-Da-Skitzo-Featuring-Brady-Storm-Brewing/release/1006431",
+    "slug": "tony-da-skitzo-storm-brewing",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 28,
+    "name": "Next Stop (Barber Shop Mix)",
+    "artist": "Da Noe Doe Network",
+    "year": "1996",
+    "hash": "QmP9TDBMj1TXYXPFYCarzvZ2abcFC1nMngfZ9Lc2EeTdPm",
+    "discogs": "Da-Noe-Doe-Network-Next-Stop-Take-A-Journey/release/1062058",
+    "slug": "da-noe-doe-network-next-stop",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 29,
+    "name": "Time Up",
+    "artist": "Zartan",
+    "year": "1997",
+    "hash": "QmVWsKaCUVjcZnpBPAYX8zWCr6UHZ3suZoTxdXgGL6dkaw",
+    "discogs": "Zartan-Krack/release/2760929",
+    "slug": "zartan-time-up",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 30,
+    "name": "Represent",
+    "artist": "The Mischievous LQ",
+    "year": "1996",
+    "hash": "QmV53usY7eiYrhtbePoHPR4Uj2qqPjEKw73PMKmM4cDTiJ",
+    "discogs": "The-Mischievous-LQ-And-The-Mad-Mischief-Crew-Mischief-Night/release/1166857",
+    "slug": "the-mischievous-lq-represent",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 31,
+    "name": "Circles",
+    "artist": "3rd Eye",
+    "year": "1997",
+    "hash": "QmUVYTaSN7uLuHqmaYbr4BnQQ8zuj1JFkYYtVYmBNJwAS5",
+    "discogs": "3rd-Eye-Circles/release/1378526",
+    "slug": "the-mischievous-lq-represent",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 32,
+    "name": "Slide Da Snake",
+    "artist": "Brick",
+    "year": "1997",
+    "hash": "QmZ8PRwPECW9CDeVhxeGhjeMhJxmWeGFCLwZaXRccBNNsV",
+    "discogs": "Various-To-Be-Real/release/1830351",
+    "slug": "brick-slide-da-snake",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "ruckus" }],
+    "featured": null
+  },
+  {
+    "id": 33,
+    "name": "Strickly Creepin'",
+    "artist": "NSV",
+    "year": "1996",
+    "hash": "QmUr4HjHwg11FFN9VsLqDpDqEo8khSVeeqFsxevseGP68a",
+    "discogs": "Various-Crime-Scene-Compilation-Ep-/release/1333189",
+    "slug": "nsv-strickly-creepin",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "ruckus" }],
+    "featured": null
+  },
+  {
+    "id": 34,
+    "name": "Long Time Coming",
+    "artist": "Nightbreed",
+    "year": "1998",
+    "hash": "QmRcTeCFJuPHe9BysWGEsihKxCt2PeaztigiKdP9HvHhUR",
+    "discogs": "Nightbreed-2-Roads-Out-The-Ghetto/release/419069",
+    "slug": "nightbreed-long-time-coming",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "paradise" }],
+    "featured": null
+  },
+  {
+    "id": 35,
+    "name": "It's In Their Nature",
+    "artist": "Ghetto Seals",
+    "year": "1998",
+    "hash": "QmXYWkfQH6pmT57a9L5chh52jCEbXVhhzH1gsrd2rRgode",
+    "discogs": "",
+    "slug": "ghetto-seals-its-in-their-nature",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "ruckus" }],
+    "featured": null
+  },
+  {
+    "id": 36,
+    "name": "The God Vs The Devil",
+    "artist": "Paranorm Ft. Devilman",
+    "year": "1999",
+    "hash": "QmWcdHBWULiD9c5A3pxtZhegVYEqYZ4kSEfE9GvMqYdt7e",
+    "discogs": "DEvilman-Featuring-Paranorm-God-Vs-The-Devil/release/3031397"
+  },
+  {
+    "id": 37,
+    "name": "Madd Luv",
+    "artist": "Sandinistas",
+    "year": "1997",
+    "hash": "QmVE6F8EYbDKGmA2aMi9p4KRwvrQHAeHdHH26hNkbjmoby",
+    "discogs": "Sandinistas-Madd-Luv-Higher/release/1421034"
+  },
+  {
+    "id": 38,
+    "name": "Scared Of Us",
+    "artist": "Widow Prizum",
+    "year": "2002",
+    "hash": "QmSYevRVMiJw42bQ664Q7zSscCBwcj9mQBBKXA36hMLVuU",
+    "discogs": "Widow-Prizum-A-Brooklyn-Kind-Of-Life/release/1735009"
+  },
+  {
+    "id": 39,
+    "name": "Pass It Around",
+    "artist": "Widow Prizum",
+    "year": "2002",
+    "hash": "QmW8Ea5bRjojJXuoDxcbLDVcJT9dRUvpH3aRWZHe2TiaED",
+    "discogs": "Widow-Prizum-A-Brooklyn-Kind-Of-Life/release/1735009"
+  },
+  {
+    "id": 40,
+    "name": "Show & Prove",
+    "artist": "Pitch Black",
+    "year": "1998",
+    "hash": "QmcGcCN3dT6Mv3xvFAjNJEo5J393b9ZfjgTySbzpdCtWsJ",
+    "discogs": "Pitch-Black-Show-Prove/release/225821"
+  },
+  {
+    "id": 41,
+    "name": "Life And Breath",
+    "artist": "Braintax, Supa T, Lewis Parker",
+    "year": "1998",
+    "hash": "QmP1VMa7KvDqe5rmBFqCyC7hbPtWHKtwuAKa9Lxum8ABNT",
+    "discogs": "Various-The-98-Series-1/release/233488"
+  },
+  {
+    "id": 42,
+    "name": "Great Wonders Of 96",
+    "artist": "Lewis Parker",
+    "year": "1998",
+    "hash": "QmaLy6Xh9CcZ5huACxLcK26qoLaFSPHaANrgJvJe6UQDDd",
+    "discogs": "Various-The-98-Series-1/release/233488"
+  },
+  {
+    "id": 43,
+    "name": "SOLBR",
+    "artist": "S.O.L. & B.R.",
+    "year": "1997",
+    "hash": "QmWCR6mzC2ZHmQd7Zi8ZuyME5NNh9H2b54ND85DungqZ2j",
+    "discogs": "Various-Word-Sound-Power/release/1654215"
+  },
+  {
+    "id": 44,
+    "name": "Bordaline",
+    "artist": "Wiseguys",
+    "year": "1996",
+    "hash": "QmcfiHsNbxGWegiXazkys84zyWUAVd94WwAL7e3duPt6JM",
+    "discogs": "Wiseguys-In-Tha-Company-Of-Killaz/release/1650728"
+  },
+  {
+    "id": 45,
+    "name": "Darkside Of Life",
+    "artist": "The Zone",
+    "year": "1995",
+    "hash": "QmXD3KXfuNYjQM8NSU51aFpN5WE2ZAkcQjLHrfr8sfwDwG",
+    "discogs": "Various-Shaolin-Style/master/895980"
+  },
+  {
+    "id": 46,
+    "name": "Introduction",
+    "artist": "Gifted",
+    "year": "1995",
+    "hash": "QmWPoZeGWkSHM26sXAjPPhWqi1LkjUqizMU6LrygbvoUBd",
+    "discogs": "Various-Shaolin-Style/master/895980"
+  },
+  {
+    "id": 47,
+    "name": "The Place",
+    "artist": "U.S.D.",
+    "year": "1996",
+    "hash": "QmcWNNgi6Vh3cGG3RkfihjtQPNvMpkukoc5TUs9sVZFd6T",
+    "discogs": "Various-High-Council-Unsigned-All-Stars/release/1393994"
+  },
+  {
+    "id": 48,
+    "name": "Face To Face",
+    "artist": "Wiseguys",
+    "year": "1996",
+    "hash": "QmNcCu8hzfBj89nSfzoWgQ3fjozpafT3bQ1CPZB9JEekNL",
+    "discogs": "Wiseguys-Process-Of-Elimination-The-Unreleased-EP/release/11295463"
+  },
+  {
+    "id": 49,
+    "name": "Knine Six",
+    "artist": "Kamp Knomad",
+    "year": "1996",
+    "hash": "QmPkcZFzmzap6FNiegyUibmqdmmCNRqWZUGKBkvuH4J2Gm",
+    "discogs": "Kamp-Knomad-Kashflow-Knine-Six/release/1744656"
+  },
+  {
+    "id": 50,
+    "name": "Sins",
+    "artist": "Rick Da 'Bro",
+    "year": "1996",
+    "hash": "QmWsjvHRkXauAAN1o8dZcBDEExwbJVLr6Cf2ULkjjrEEo6",
+    "discogs": "Rick-Da-Bro-Unsigned/release/1201204"
+  },
+  {
+    "id": 51,
+    "name": "Emotions",
+    "artist": "Rick Da 'Bro",
+    "year": "1996",
+    "hash": "QmUC4i8R5SQQmbjMuGkiyRXY4o9kTvujWbJpiDYbSUi4PR",
+    "discogs": "Rick-Da-Bro-Unsigned/release/1201204"
+  },
+  {
+    "id": 51,
+    "name": "Klockuz",
+    "artist": "Dead Poetz Society",
+    "year": "1996",
+    "hash": "QmQV8sqJRUNNHyrAe8PeCq7mA7P94jeRXi1LY9jmU2xACB",
+    "discogs": "Rick-Da-Bro-Unsigned/release/1201204"
+  },
+  {
+    "id": 52,
+    "name": "Crush",
+    "artist": "Big Shug",
+    "year": "1996",
+    "hash": "QmYCQuVR4Nussoa8fpp2MvisK5Emuwbe8KpXwD1136zYKD",
+    "discogs": "Big-Kwam-I-Dont-Give-A-Whut-Mic-To-Mic/release/889499"
+  },
+  {
+    "id": 53,
+    "name": "Karma",
+    "artist": "Mastermind",
+    "year": "1996",
+    "hash": "QmRPXKznEwq4qhsysk7ra9qZV2x56nb1uJFqrUzL8fHYpF",
+    "discogs": "Mastermind-The-Adventures-Of-Mastermind/release/1568864"
+  },
+  {
+    "id": 54,
+    "name": "Mic to Mic",
+    "artist": "Big Kwam",
+    "year": "1996",
+    "hash": "QmZxzrcfwnctoJV9S9kjSrwuWsYMLiLeA12pa1rsrdVLYZ",
+    "discogs": "Big-Kwam-I-Dont-Give-A-Whut-Mic-To-Mic/release/889499"
+  },
+  {
+    "id": 55,
+    "name": "Keep It In Ya Area",
+    "artist": "Bredrens",
+    "year": "1996",
+    "hash": "QmNiFV15gnMNqKJEGsXPVua4XBs6jXoynYpATBVpEZwZ1S",
+    "discogs": "Bredrens-Back-On-The-Block-Keep-It-In-Ya-Area/release/1331335"
+  },
+  {
+    "id": 56,
+    "name": "Northern Exposure",
+    "artist": "Mixed Elements",
+    "year": "1996",
+    "hash": "QmWa3ekGXv7NjFvycknrCds25tTMpD1odyxWmvUW75jpyq",
+    "discogs": "Mixed-Elements-Northern-Exposure/release/6974225"
+  },
+  {
+    "id": 57,
+    "name": "That's My Nigga",
+    "artist": "Rawbreed",
+    "year": "1996",
+    "hash": "Qme2BmMCb85uYbuJJzc5u2CpxECfcmG1mxcK7gdFfUzNEH",
+    "discogs": "Rawbreed-Thats-My-Nigga/release/5996391"
+  },
+  {
+    "id": 58,
+    "name": "Raw Smoke",
+    "artist": "Mr Shysty",
+    "year": "1997",
+    "hash": "QmYwRcgLLH7qpz9wivZ87QZHxTZftHswjdAwCJuwPqNv1K",
+    "discogs": "Mr-Shysty-Connect-Bang/release/2123356"
+  },
+  {
+    "id": 59,
+    "name": "Bullzeye ",
+    "artist": "Gig Saw",
+    "year": "1997",
+    "hash": "QmYqVKdJMDKLaTUQjx78fniYoF7Ko1oGgQ1y5xeF9Cswgn",
+    "discogs": "Gig-Saw-We-Ride-Da-Beats-Bullzeye-Bigons/release/1913550"
+  },
+  {
+    "id": 60,
+    "name": "Watch Them",
+    "artist": "Skavengaz",
+    "year": "1997",
+    "hash": "QmbNWfwugUkDqgiNswnadt44mezpGiz64XyX8FKyUb12rz",
+    "discogs": "Skavengaz-10-Mill-Stash/release/7315539"
+  },
+  {
+    "id": 61,
+    "name": "Paper Chase",
+    "artist": "Know Qwestion",
+    "year": "1998",
+    "hash": "Qmbf5eHu2BA1AJfGcahjPdg1jo9oXutQcsKteFTconXoDS",
+    "discogs": "Know-Qwestion-Eclipse/release/1902384"
+  },
+  {
+    "id": 62,
+    "name": "High Times",
+    "artist": "Mr.Dev'yon",
+    "year": "1999",
+    "hash": "QmaQA1wKe9do6wRS3sMn8rqw5HVnXR8EsGSKKkN9AtRvLV",
+    "discogs": "Various-Paperchase-Volume-1-/release/8997533"
+  },
+  {
+    "id": 63,
+    "name": "Sadistic Flow",
+    "artist": "Nomad",
+    "year": "1998",
+    "hash": "QmfAJX2DTVQZK6YcNrHHKaP4iHuCGXAp8rkUcB2EiXyqPY",
+    "discogs": "Various-Classic-Elements/release/1642453"
+  },
+  {
+    "id": 64,
+    "name": "Fake Superstars",
+    "artist": "U-Niq",
+    "year": "1998",
+    "hash": "QmcADQcAFtBz4Nf3bRdMWgf5vaYo1UASwt8hrDQw8NwChX",
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681"
+  },
+  {
+    "id": 65,
+    "name": "Triple X Files",
+    "artist": "Cane & MD",
+    "year": "1998",
+    "hash": "QmVPbRLrN43VoraEyGy6b9FspWXazvvh69LnnJ7znxgxBc",
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681"
+  },
+  {
+    "id": 66,
+    "name": "Hungry",
+    "artist": "Freestyle Fellowship",
+    "year": "1999",
+    "hash": "QmZiLmcsU9ocGtLv3JMStJs8cV959xWLh2WZNVy6bsK2CZ",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 66,
+    "name": "Kinetic Energy",
+    "artist": "Chace Infinite",
+    "year": "1999",
+    "hash": "QmWzKPZM49R6aYLSr3RdFYHC594z4V23JKWxHsLSy7irVN",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 67,
+    "name": "Basics",
+    "artist": "Rakaa-Iriscience Ft. Defari, Tash",
+    "year": "1999",
+    "hash": "QmRPBbeogc5UKbMqFNpu4iAcnJpz1QKFim5iw7ThCJU5xt",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 68,
+    "name": "Tradegy",
+    "artist": "Peeps Game",
+    "year": "1999",
+    "hash": "QmYFVjZwwyZoTNpTpPgSiGyL1982mrsHVYg62L6uvnSqrR",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 69,
+    "name": "Black Cracker Suite",
+    "artist": "Black Samurai",
+    "year": "2000",
+    "hash": "QmTuFx1WPFPSMGuib499egkPPHhkx3rpZgG9QvwDGzFMre",
+    "discogs": "Black-Samurai-The-Struggle-Continues/release/1325535"
+  },
+  {
+    "id": 70,
+    "name": "New Jack Millennium Sting",
+    "artist": "Black Samurai",
+    "year": "2000",
+    "hash": "QmR5V1ooxZYSjHnZaHZ28MNm9eLY5PkWwmHn355q7e4Ka7",
+    "discogs": "Black-Samurai-The-Struggle-Continues/release/1325535"
+  },
+  {
+    "id": 71,
+    "name": "Raw Dawg",
+    "artist": "Big Tabb Ft. Diverse, Shaliek",
+    "year": "1996",
+    "hash": "QmetSaHKG5z942ZngMcBcET1rhML2a2uTFzneHteS9LdHa",
+    "discogs": "Big-Tabb-Raw-Dawg/release/1039685"
+  },
+  {
+    "id": 72,
+    "name": "5 Thug Thoughts",
+    "artist": "Illa Gee Ft. Prodigy",
+    "year": "199X",
+    "hash": "QmRSc58JYTRFDvbWUgqKVbuM1aMTVhkMjERdRXU8cXDgde",
+    "discogs": "Illa-Gee-DJ-Clear-4-OC-Poops-5-Thug-Thoughts-The-Intro/release/1935577"
+  },
+  {
+    "id": 74,
+    "name": "Grimlock",
+    "artist": "108 Dragons",
+    "year": "1996",
+    "hash": "QmQsEnzYL9gBNBuJAjXCeFveNLreK6ugHL6YbADGEueZVH",
+    "discogs": "108-Dragons-The-Black-Dragon/release/321525"
+  },
+  {
+    "id": 75,
+    "name": "Brooklyn Universe",
+    "artist": "Ex-Prez Ft. LOE",
+    "year": "1998",
+    "hash": "QmZcYtcjHnnn6PXEt1zYWtNV7eiwqmSaqY2FmtHcvk7hjM",
+    "discogs": "Ex-Prez-1019/master/307900"
   }
 ]

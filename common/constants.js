@@ -8,8 +8,8 @@ export const colors = {
   black: "rgba(0, 0, 0, 1)",
   grey: "#DFE0DF",
   black_secondary: "#101010",
-  red: "#aa832f",
-  green_secondary: "#3C794E",
+  red: "#28d7fe",
+  green_secondary: "#00bb27",
   green_third: "rgba(67, 151, 36, 1)",
   pink: "rgba(231,45,238, 1)",
 };

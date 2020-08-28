@@ -6,6 +6,7 @@ import { cache } from "@emotion/css";
 import App from "next/app";
 import injectGlobalStyles from "~/common/styles/global";
 
+
 // NOTE(wwwjim):
 // https://nextjs.org/docs/advanced-features/custom-app
 function MyApp({ Component, pageProps }) {

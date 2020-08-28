@@ -33,19 +33,26 @@ export default () => css`
 
   html, body {
     height: 100%;
-    background: ${Constants.colors.white};
-    color: ${Constants.colors.green};
+    background: ${Constants.colors.black};
+    color: ${Constants.colors.grey};
     font-size: 16px;
     font-family: 'VT323';
+    cursor: crosshair;
   }
 
   a {
-    color: ${Constants.colors.white};
+    text-decoration: none;
+    cursor: crosshair;
   }
 
   a:hover {
-    color: ${Constants.colors.white};
-    background: ${Constants.colors.red};
+    color: ${Constants.colors.green_secondary};
+    cursor: crosshair;
+
+  }
+
+  a:visited {
+    color: ${Constants.colors.grey};
   }
 
 `;
