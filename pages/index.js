@@ -180,10 +180,9 @@ export default class IndexPage extends React.Component {
   };
 
   render() {
-    const title = "Midnight Bar - The best in town";
-    const description =
-      "minimal example for a full client server web application with next, express, and emotion.";
-    const url = "https://github.com/jimmylee/next-express-emotion";
+    const title = "Midnight Radio - Home of the 90s";
+    const description = "";
+    const url = "";
     const {
       song_url,
       playing,
@@ -233,10 +232,6 @@ export default class IndexPage extends React.Component {
             sizes="16x16"
             href="/static/favicon-16x16.png"
           />
-
-          <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
-
-          <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
 
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
