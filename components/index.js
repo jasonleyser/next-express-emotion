@@ -91,7 +91,7 @@ export class DisplayData extends React.Component {
 }
 
 const STYLES_LOGO = css`
-  display: block;
+  display: absolute;
   margin-left: auto;
   margin-right: auto;
 

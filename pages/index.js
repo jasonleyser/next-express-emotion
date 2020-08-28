@@ -52,7 +52,6 @@ const STYLES_OVERLAY = css`
   pointer-events: none;
   position: absolute;
   width: 100%;
-  height: 100%;
   background: repeating-linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0,
@@ -236,7 +235,6 @@ export default class IndexPage extends React.Component {
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
         <System.Logo url="/static/neon2.gif" height="200px" />
-        <div css={STYLES_OVERLAY}></div>
         <div css={STYLES_LAYOUT}>
           <ReactPlayer
             ref={this.ref}
