@@ -273,7 +273,7 @@ export default class IndexPage extends React.Component {
                   <div css={STYLES_GREEN}>run time: {display(runtime)}</div>
                   <br />
                   {name} ({year})<br />
-                  [Artist] {artist} <br />
+                  [artist] {artist} <br />
                 </div>
               )}
             </div>
