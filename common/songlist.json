@@ -1,0 +1,695 @@
+[
+  {
+    "id": 1,
+    "name": "No Mercy",
+    "artist": "Rowdy",
+    "year": 1998,
+    "hash": "https://ipfs.io/ipfs/https://ipfs.io/ipfs/QmbbyE5wggUCRSdRnKVgWNBS5t4gvyWE5fvFPCuWgQXXRp",
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681",
+    "cover": "Hurricane-Presents-Killertape-Vol-1.png",
+    "slug": "rowdy-no-mercy",
+    "end": null
+  },
+
+  {
+    "id": 2,
+    "name": "Hidden Insight",
+    "artist": "Brass Tracks",
+    "year": 1996,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Brass+Tacks+-+Hidden+Insight+(Classic+Mix).mp3",
+    "discogs": "Brass-Tracks-Ice-Breaker-Classic/release/659726"
+  },
+
+  {
+    "id": 3,
+    "name": "Da Bomb Baby",
+    "artist": "Godfather Don",
+    "year": 1998,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/GODFATHER+DON+-+Da+Bomb+Baby.mp3",
+    "discogs": "Godfather-Don-Fame-Da-Bomb-Baby/release/227549",
+    "slug": "godfather-don-da-bomb-baby"
+  },
+  {
+    "id": 4,
+    "name": "Presha Points",
+    "artist": "Presha",
+    "year": 1997,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/presha+-+presha+points.mp3",
+    "discogs": "Presha-Presha-Points-/release/6420145",
+    "slug": "presha-presha-points"
+  },
+  {
+    "id": 5,
+    "name": "The Marvelous",
+    "artist": "Scoob Rock",
+    "year": 1999,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Scoob+Rock+aka+Grandemperial+-+The+Marvelous+(1999).mp3",
+    "discogs": "Scoob-Rock-Aka-Grandemperial-The-EP-Falling-Star/release/1515965",
+    "slug": "scoob-rock-the-marvelous"
+  },
+  {
+    "id": 6,
+    "name": "Favorable Fluids",
+    "artist": "Lower Level",
+    "year": 1995,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Lower+Level+-+Favorable+Fluids.mp3",
+    "discogs": "Lower-Level-Top-Notch-Favorable-Fluids/release/2236270"
+  },
+  {
+    "id": 7,
+    "name": "Silence",
+    "artist": "SEC",
+    "year": 1999,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/SEC+-+Silence.mp3",
+    "discogs": "SEC-Dark-City/release/3802481",
+    "slug": "sec-silence"
+  },
+  {
+    "id": 8,
+    "name": "Bleeding Hate",
+    "artist": "Parallax",
+    "year": 1994,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/10+Bleeding+Hate.mp3",
+    "discogs": "Parallax-Dont-Mean-Jak/release/586107"
+  },
+  {
+    "id": 9,
+    "name": "Gotta Get It",
+    "artist": "Ill Ko",
+    "year": 1998,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/01+Ill-Ko+-+Gotta+Get+It.mp3",
+    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333",
+    "slug": "ill-ko-gotta-get-it"
+  },
+  {
+    "id": 10,
+    "name": "Hallucinations",
+    "artist": "Ill Ko",
+    "year": 1998,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/03+Ill-Ko+-+Hallucinations.mp3",
+    "discogs": "Ill-Ko-Heavy-Hittas-Volume-One/release/8064333",
+    "slug": "ill-ko-hallucinations"
+  },
+  {
+    "id": 11,
+    "name": "Pass It!",
+    "artist": "Ghetto Dawgs",
+    "year": 1998,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Ghetto+Dawgz+-+Pass+It+!+(1998)+(1).mp3",
+    "discogs": "Ghetto-Dawgz-Ghetto-Dawgz/release/1810309",
+    "slug": "ghetto-dawgs-pass-it"
+  },
+  {
+    "id": 12,
+    "name": "Hood Life",
+    "artist": "Tasc 4orce",
+    "year": 1995,
+    "hash": "https://ipfs.io/ipfs/QmbXo6nq5ufiWen95Jnir5Vp2JaLJWjZeHd8UDdNvdSnox",
+    "discogs": "Tasc-4orce-Time-Ta-Shine/release/7191025",
+    "slug": "tasc-4orce-hood-life"
+  },
+  {
+    "id": 13,
+    "name": "Time Ta Shine",
+    "artist": "Tasc 4orce",
+    "year": 1995,
+    "hash": "https://ipfs.io/ipfs/QmaRAD3QwfWCbkpnaD9dMGMoMnvNjnraiZsRL2s9gs2RdR",
+    "discogs": "Tasc-4orce-Time-Ta-Shine/release/7191025",
+    "slug": "tasc-4orce-time-ta-shine"
+  },
+  {
+    "id": 14,
+    "name": "Butta Fly High",
+    "artist": "Liquid Knights",
+    "year": 1999,
+    "hash": "https://ipfs.io/ipfs/QmSge36vRVz4LESBMfsynJyQJkJjbnem2ppK4JKe8SYWZe",
+    "discogs": "Various-Tha-Beginning/release/9586068",
+    "slug": "liquid-knights-butta-fly-high"
+  },
+  {
+    "id": 15,
+    "name": "Meet the Mayor",
+    "artist": "100X",
+    "year": 1996,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/100X+-+Meet+The+Mayor+(1996).mp3",
+    "discogs": "100X-Fast-Loot-Tactics/release/993057"
+  },
+  {
+    "id": 16,
+    "name": "Two Deadly Sins",
+    "artist": "Vooodu",
+    "year": 1996,
+    "hash": "https://ipfs.io/ipfs/QmPYKXbftVmRsiLsyc4Y93AQd7Vd7n6LJWVod5tA2HaUxC",
+    "discogs": "Vooodu-One-Life-To-Live-Two-Deadly-Sins/release/318819",
+    "slug": "vooodu-two-deadly-sins"
+  },
+  {
+    "id": 17,
+    "name": "Hear Me Think",
+    "artist": "Abyssmen",
+    "year": 1997,
+    "hash": "https://ipfs.io/ipfs/QmSFiBKCM4WE2K8UeCgWDgysxfESjspk3EQ8eR68G2wcs8",
+    "discogs": "Abyssmen-Nightcrawlers/release/7732226",
+    "slug": "abyssmen-hear-me-think"
+  },
+  {
+    "id": 18,
+    "name": "Terry Bogard",
+    "artist": "108 Dragons",
+    "year": 1996,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/108+Dragons+-+Terry+Bogard+(Unreleased).mp3",
+    "discogs": "108-Dragons-108-Dragons/release/12174690"
+  },
+  {
+    "id": 19,
+    "name": "This Is How I Feel",
+    "artist": "M'stro",
+    "year": 1998,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/M'stro+-+This+Is+How+I+Feel+(1).mp3",
+    "discogs": "Mstro-This-Is-How-I-Feel/release/3342163",
+    "slug": "mstro-this-is-how-i-feel"
+  },
+  {
+    "id": 19,
+    "name": "Bailys and Tequila",
+    "artist": "M'stro",
+    "year": 1998,
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/M'stro+-+Bailys+And+Tequila.mp3",
+    "discogs": "Mstro-This-Is-How-I-Feel/release/3342163",
+    "slug": "mstro-bailys-and-tequila"
+  },
+  {
+    "id": 20,
+    "name": "Da Struggle Remix",
+    "artist": "Cane",
+    "year": "199X",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Cane+-+Da+Struggle+(remix).mp3",
+    "discogs": "Cane-Big-Booty-Btches/release/5282531"
+  },
+  {
+    "id": 21,
+    "name": "Paradox Remix",
+    "artist": "5E",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/10+5E+-+Paradox+(RMX).mp3",
+    "discogs": "Various-Classic-Elements/release/1642453",
+    "slug": "5e-paradox-remix"
+  },
+  {
+    "id": 22,
+    "name": "What's Ya Definition",
+    "artist": "Jace",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/14+What's+Ya+Definition.mp3",
+    "discogs": "Various-Classic-Elements/release/1642453",
+    "slug": "whats-ya-definition"
+  },
+  {
+    "id": 24,
+    "name": "Crime Boss",
+    "artist": "NSV",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/NSV+-+Crime+Boss.mp3",
+    "discogs": "Various-Crime-Scene-EP/release/5534904",
+    "slug": "nsv-crime-boss"
+  },
+  {
+    "id": 25,
+    "name": "Russian Roulette",
+    "artist": "Big Cel",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Big+Cel+-+Russian+Roulette.mp3",
+    "discogs": "Various-Crime-Scene-EP/release/5534904",
+    "slug": "big-cel-russian-roulette",
+    "end": null,
+    "udg": 90,
+    "streams": [{ "name": "ruckus" }],
+    "featured": null
+  },
+  {
+    "id": 26,
+    "name": "Supernatural",
+    "artist": "Tha Beggas",
+    "year": "1997",
+    "hash": "https://ipfs.io/ipfs/QmZvLwN2djAqvuuNuPZ5qwmENuxmgcEF2dZoNiHZ9nhukw",
+    "discogs": "Tha-Beggas-Super-Natural/release/1330166",
+    "slug": "tha-beggas-supernatural"
+  },
+  {
+    "id": 27,
+    "name": "Storm Brewing",
+    "artist": "Tony Da Skitzo Ft. Brady",
+    "year": "1997",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Tony+Da+Skitzo+%26+Brady+-+Storm+Brewing.mp3",
+    "discogs": "Tony-Da-Skitzo-Featuring-Brady-Storm-Brewing/release/1006431",
+    "slug": "tony-da-skitzo-storm-brewing"
+  },
+  {
+    "id": 28,
+    "name": "Next Stop (Barber Shop Mix)",
+    "artist": "Da Noe Doe Network",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Da+Noe+Doe+Network+-+Next+Stop+(Barber+Shop+Mix)+(1996).mp3",
+    "discogs": "Da-Noe-Doe-Network-Next-Stop-Take-A-Journey/release/1062058"
+  },
+
+  {
+    "id": 30,
+    "name": "Represent",
+    "artist": "The Mischievous LQ",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/THE+MISCHIEVOUS+LQ+%26+THE+MAD+MISCHIEF+CREW+REPRESENTING.mp3",
+    "discogs": "The-Mischievous-LQ-And-The-Mad-Mischief-Crew-Mischief-Night/release/1166857",
+    "slug": "the-mischievous-lq-represent"
+  },
+  {
+    "id": 31,
+    "name": "Circles",
+    "artist": "3rd Eye",
+    "year": "1997",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/3RD+Eye+-+Circles.mp3",
+    "discogs": "3rd-Eye-Circles/release/1378526",
+    "slug": "the-mischievous-lq-represent"
+  },
+  {
+    "id": 32,
+    "name": "Slide Da Snake",
+    "artist": "Brick",
+    "year": "1997",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Brick+-+Slide+Da+Snake.mp3",
+    "discogs": "Various-To-Be-Real/release/1830351",
+    "slug": "brick-slide-da-snake"
+  },
+  {
+    "id": 33,
+    "name": "Strickly Creepin'",
+    "artist": "NSV",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/NSV+-+Strickly+Creepin'+(Uncut).mp3",
+    "discogs": "Various-Crime-Scene-Compilation-Ep-/release/1333189",
+    "slug": "nsv-strickly-creepin"
+  },
+  {
+    "id": 34,
+    "name": "Long Time Coming",
+    "artist": "Nightbreed",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Nightbreed+-+Long+Time+Coming.mp3",
+    "discogs": "Nightbreed-2-Roads-Out-The-Ghetto/release/419069",
+    "slug": "nightbreed-long-time-coming",
+    "featured": null
+  },
+  {
+    "id": 35,
+    "name": "It's In Their Nature",
+    "artist": "Ghetto Seals",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmXYWkfQH6pmT57a9L5chh52jCEbXVhhzH1gsrd2rRgode",
+    "discogs": "",
+    "slug": "ghetto-seals-its-in-their-nature"
+  },
+  {
+    "id": 36,
+    "name": "The God Vs The Devil",
+    "artist": "Paranorm Ft. Devilman",
+    "year": "1999",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/PARANORM+FEAT.+DEVILMAN+-+THE+GOD+VS+THE+DEVIL+(1999).mp3",
+    "discogs": "DEvilman-Featuring-Paranorm-God-Vs-The-Devil/release/3031397"
+  },
+  {
+    "id": 37,
+    "name": "Madd Luv",
+    "artist": "Sandinistas",
+    "year": "1997",
+    "hash": "https://ipfs.io/ipfs/QmVE6F8EYbDKGmA2aMi9p4KRwvrQHAeHdHH26hNkbjmoby",
+    "discogs": "Sandinistas-Madd-Luv-Higher/release/1421034"
+  },
+  {
+    "id": 38,
+    "name": "Scared Of Us",
+    "artist": "Widow Prizum",
+    "year": "2002",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Widow+Prizum+-+Scared+Of+Us+(Feat.+Zoundwavez).mp3",
+    "discogs": "Widow-Prizum-A-Brooklyn-Kind-Of-Life/release/1735009"
+  },
+  {
+    "id": 39,
+    "name": "Pass It Around",
+    "artist": "Widow Prizum",
+    "year": "2001",
+    "hash": "https://ipfs.io/ipfs/QmW8Ea5bRjojJXuoDxcbLDVcJT9dRUvpH3aRWZHe2TiaED",
+    "discogs": "Widow-Prizum-A-Brooklyn-Kind-Of-Life/release/1735009"
+  },
+  {
+    "id": 40,
+    "name": "Show & Prove",
+    "artist": "Pitch Black",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmcGcCN3dT6Mv3xvFAjNJEo5J393b9ZfjgTySbzpdCtWsJ",
+    "discogs": "Pitch-Black-Show-Prove/release/225821"
+  },
+  {
+    "id": 41,
+    "name": "Life And Breath",
+    "artist": "Braintax, Supa T, Lewis Parker",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmP1VMa7KvDqe5rmBFqCyC7hbPtWHKtwuAKa9Lxum8ABNT",
+    "discogs": "Various-The-98-Series-1/release/233488"
+  },
+  {
+    "id": 42,
+    "name": "Great Wonders Of 96",
+    "artist": "Lewis Parker",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmaLy6Xh9CcZ5huACxLcK26qoLaFSPHaANrgJvJe6UQDDd",
+    "discogs": "Various-The-98-Series-1/release/233488"
+  },
+  {
+    "id": 43,
+    "name": "SOLBR",
+    "artist": "S.O.L. & B.R.",
+    "year": "1997",
+    "hash": "https://ipfs.io/ipfs/QmWCR6mzC2ZHmQd7Zi8ZuyME5NNh9H2b54ND85DungqZ2j",
+    "discogs": "Various-Word-Sound-Power/release/1654215"
+  },
+  {
+    "id": 44,
+    "name": "Bordaline",
+    "artist": "Wiseguys",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/11+-+bordaline+ft.+the+all%2C+mass+murderin+mike+aka+m3.mp3",
+    "discogs": "Wiseguys-In-Tha-Company-Of-Killaz/release/1650728"
+  },
+  {
+    "id": 45,
+    "name": "Darkside Of Life",
+    "artist": "The Zone",
+    "year": "1995",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/05+The+Zone+-+Dark+Side+Of+Life+Feat.+Hasstyle.mp3",
+    "discogs": "Various-Shaolin-Style/master/895980"
+  },
+  {
+    "id": 46,
+    "name": "Introduction",
+    "artist": "Gifted",
+    "year": "1995",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/06+Gifted+-+Introduction.mp3",
+    "discogs": "Various-Shaolin-Style/master/895980"
+  },
+  {
+    "id": 47,
+    "name": "The Place",
+    "artist": "U.S.D.",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/U.S.D.+-+The+Place.mp3",
+    "discogs": "Various-High-Council-Unsigned-All-Stars/release/1393994"
+  },
+  {
+    "id": 48,
+    "name": "Face To Face",
+    "artist": "Wiseguys",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmNcCu8hzfBj89nSfzoWgQ3fjozpafT3bQ1CPZB9JEekNL",
+    "discogs": "Wiseguys-Process-Of-Elimination-The-Unreleased-EP/release/11295463"
+  },
+  {
+    "id": 49,
+    "name": "Knine Six",
+    "artist": "Kamp Knomad",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmPkcZFzmzap6FNiegyUibmqdmmCNRqWZUGKBkvuH4J2Gm",
+    "discogs": "Kamp-Knomad-Kashflow-Knine-Six/release/1744656"
+  },
+  {
+    "id": 50,
+    "name": "Sins",
+    "artist": "Rick Da 'Bro",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmWsjvHRkXauAAN1o8dZcBDEExwbJVLr6Cf2ULkjjrEEo6",
+    "discogs": "Rick-Da-Bro-Unsigned/release/1201204"
+  },
+  {
+    "id": 51,
+    "name": "Emotions",
+    "artist": "Rick Da 'Bro",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmUC4i8R5SQQmbjMuGkiyRXY4o9kTvujWbJpiDYbSUi4PR",
+    "discogs": "Rick-Da-Bro-Unsigned/release/1201204"
+  },
+  {
+    "id": 51,
+    "name": "Klockuz",
+    "artist": "Dead Poetz Society",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmQV8sqJRUNNHyrAe8PeCq7mA7P94jeRXi1LY9jmU2xACB",
+    "discogs": "Rick-Da-Bro-Unsigned/release/1201204"
+  },
+  {
+    "id": 52,
+    "name": "Crush",
+    "artist": "Big Shug",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Big+Shug+-+Crush+1996+Uncut.mp3",
+    "discogs": "Big-Kwam-I-Dont-Give-A-Whut-Mic-To-Mic/release/889499"
+  },
+  {
+    "id": 53,
+    "name": "Karma",
+    "artist": "Mastermind",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Mastermind+-+Karma.mp3",
+    "discogs": "Mastermind-The-Adventures-Of-Mastermind/release/1568864"
+  },
+  {
+    "id": 54,
+    "name": "Mic to Mic",
+    "artist": "Big Kwam",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmZxzrcfwnctoJV9S9kjSrwuWsYMLiLeA12pa1rsrdVLYZ",
+    "discogs": "Big-Kwam-I-Dont-Give-A-Whut-Mic-To-Mic/release/889499"
+  },
+  {
+    "id": 55,
+    "name": "Keep It In Ya Area",
+    "artist": "Bredrens",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmNiFV15gnMNqKJEGsXPVua4XBs6jXoynYpATBVpEZwZ1S",
+    "discogs": "Bredrens-Back-On-The-Block-Keep-It-In-Ya-Area/release/1331335"
+  },
+  {
+    "id": 56,
+    "name": "Northern Exposure",
+    "artist": "Mixed Elements",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmWa3ekGXv7NjFvycknrCds25tTMpD1odyxWmvUW75jpyq",
+    "discogs": "Mixed-Elements-Northern-Exposure/release/6974225"
+  },
+  {
+    "id": 57,
+    "name": "That's My Nigga",
+    "artist": "Rawbreed",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/Qme2BmMCb85uYbuJJzc5u2CpxECfcmG1mxcK7gdFfUzNEH",
+    "discogs": "Rawbreed-Thats-My-Nigga/release/5996391"
+  },
+  {
+    "id": 58,
+    "name": "Raw Smoke",
+    "artist": "Mr Shysty",
+    "year": "1997",
+    "hash": "https://ipfs.io/ipfs/QmYwRcgLLH7qpz9wivZ87QZHxTZftHswjdAwCJuwPqNv1K",
+    "discogs": "Mr-Shysty-Connect-Bang/release/2123356"
+  },
+  {
+    "id": 59,
+    "name": "Bullzeye ",
+    "artist": "Gig Saw",
+    "year": "1997",
+    "hash": "https://ipfs.io/ipfs/QmYqVKdJMDKLaTUQjx78fniYoF7Ko1oGgQ1y5xeF9Cswgn",
+    "discogs": "Gig-Saw-We-Ride-Da-Beats-Bullzeye-Bigons/release/1913550"
+  },
+  {
+    "id": 60,
+    "name": "Watch Them",
+    "artist": "Skavengaz",
+    "year": "1997",
+    "hash": "https://ipfs.io/ipfs/QmbNWfwugUkDqgiNswnadt44mezpGiz64XyX8FKyUb12rz",
+    "discogs": "Skavengaz-10-Mill-Stash/release/7315539"
+  },
+  {
+    "id": 61,
+    "name": "Paper Chase",
+    "artist": "Know Qwestion",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/Qmbf5eHu2BA1AJfGcahjPdg1jo9oXutQcsKteFTconXoDS",
+    "discogs": "Know-Qwestion-Eclipse/release/1902384"
+  },
+  {
+    "id": 62,
+    "name": "High Times",
+    "artist": "Mr.Dev'yon",
+    "year": "1999",
+    "hash": "https://ipfs.io/ipfs/QmaQA1wKe9do6wRS3sMn8rqw5HVnXR8EsGSKKkN9AtRvLV",
+    "discogs": "Various-Paperchase-Volume-1-/release/8997533"
+  },
+  {
+    "id": 63,
+    "name": "Sadistic Flow",
+    "artist": "Nomad",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmfAJX2DTVQZK6YcNrHHKaP4iHuCGXAp8rkUcB2EiXyqPY",
+    "discogs": "Various-Classic-Elements/release/1642453"
+  },
+  {
+    "id": 64,
+    "name": "Fake Superstars",
+    "artist": "U-Niq",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmcADQcAFtBz4Nf3bRdMWgf5vaYo1UASwt8hrDQw8NwChX",
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681"
+  },
+  {
+    "id": 65,
+    "name": "Triple X Files",
+    "artist": "Cane & MD",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/04+Cane+%26+MD+-+Triple+X+Files.mp3",
+    "discogs": "Various-Hurricane-Presents-Killertape-Vol-1/release/2800681"
+  },
+  {
+    "id": 66,
+    "name": "Hungry",
+    "artist": "Freestyle Fellowship",
+    "year": "1999",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/09+Freestyle+Fellowship+-+Hungry.mp3",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 66,
+    "name": "Kinetic Energy",
+    "artist": "Chace Infinite",
+    "year": "1999",
+    "hash": "https://ipfs.io/ipfs/QmWzKPZM49R6aYLSr3RdFYHC594z4V23JKWxHsLSy7irVN",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 67,
+    "name": "Basics",
+    "artist": "Rakaa-Iriscience Ft. Defari, Tash",
+    "year": "1999",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/10+Basics+Feat.+Defari%2C+Tash.mp3",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 68,
+    "name": "Tradegy",
+    "artist": "Peeps Game",
+    "year": "1999",
+    "hash": "https://ipfs.io/ipfs/QmYFVjZwwyZoTNpTpPgSiGyL1982mrsHVYg62L6uvnSqrR",
+    "discogs": "Various-OLC-Operation-Left-Coast/release/498345"
+  },
+  {
+    "id": 69,
+    "name": "Black Cracker Suite",
+    "artist": "Black Samurai",
+    "year": "2000",
+    "hash": "https://ipfs.io/ipfs/QmTuFx1WPFPSMGuib499egkPPHhkx3rpZgG9QvwDGzFMre",
+    "discogs": "Black-Samurai-The-Struggle-Continues/release/1325535"
+  },
+  {
+    "id": 70,
+    "name": "New Jack Millennium Sting",
+    "artist": "Black Samurai",
+    "year": "2000",
+    "hash": "https://ipfs.io/ipfs/QmR5V1ooxZYSjHnZaHZ28MNm9eLY5PkWwmHn355q7e4Ka7",
+    "discogs": "Black-Samurai-The-Struggle-Continues/release/1325535"
+  },
+  {
+    "id": 71,
+    "name": "Raw Dawg",
+    "artist": "Big Tabb Ft. Diverse, Shaliek",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmetSaHKG5z942ZngMcBcET1rhML2a2uTFzneHteS9LdHa",
+    "discogs": "Big-Tabb-Raw-Dawg/release/1039685"
+  },
+  {
+    "id": 72,
+    "name": "5 Thug Thoughts",
+    "artist": "Illa Gee Ft. Prodigy",
+    "year": "199X",
+    "hash": "https://ipfs.io/ipfs/QmRSc58JYTRFDvbWUgqKVbuM1aMTVhkMjERdRXU8cXDgde",
+    "discogs": "Illa-Gee-DJ-Clear-4-OC-Poops-5-Thug-Thoughts-The-Intro/release/1935577"
+  },
+  {
+    "id": 74,
+    "name": "Grimlock",
+    "artist": "108 Dragons",
+    "year": "1996",
+    "hash": "https://ipfs.io/ipfs/QmQsEnzYL9gBNBuJAjXCeFveNLreK6ugHL6YbADGEueZVH",
+    "discogs": "108-Dragons-The-Black-Dragon/release/321525"
+  },
+  {
+    "id": 75,
+    "name": "Brooklyn Universe",
+    "artist": "Ex-Prez Ft. LOE",
+    "year": "1998",
+    "hash": "https://ipfs.io/ipfs/QmZcYtcjHnnn6PXEt1zYWtNV7eiwqmSaqY2FmtHcvk7hjM",
+    "discogs": "Ex-Prez-1019/master/307900"
+  },
+  {
+    "id": 76,
+    "name": "so far so good",
+    "artist": "da ghetto connect",
+    "year": "1995",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/",
+    "discogs": "Various-Jay-Funk-Presents-The-Baltimore-Archives-1993-1996/release/7019985"
+  },
+  {
+    "id": 78,
+    "name": "Bad For Business",
+    "artist": "T.e.f.l.o.n.",
+    "year": "1995",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/",
+    "discogs": ""
+  },
+  {
+    "id": 79,
+    "name": "Piece of the Pie",
+    "artist": "Chris Styles",
+    "year": "1996",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/Chris+Styles+-+Piece+Of+The+Pie.mp3",
+    "discogs": "Chris-Styles-Piece-Of-The-Pie/master/707692"
+  },
+  {
+    "id": 80,
+    "name": "How Itz Goin' Down",
+    "artist": "L-Swift",
+    "year": "1995",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/L-Swift+-+How+Itz+Goin'+Down+(Remix)+(1995).mp3",
+    "discogs": "L-Swift-How-Itz-Going-Down/release/415198"
+  },
+  {
+    "id": 81,
+    "name": "Neva Rest",
+    "artist": "Pillosnatchaz",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/03+Pillosnatchaz+-+Neva+Rest.mp3",
+    "discogs": "The-Bomb-Shelta-Association-Rebirth/master/1820668"
+  },
+  {
+    "id": 82,
+    "name": "Myth",
+    "artist": "Expertise",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/05+Expertise+-+Myth.mp3",
+    "discogs": "The-Bomb-Shelta-Association-Rebirth/master/1820668"
+  },
+  {
+    "id": 83,
+    "name": "Lost Artic",
+    "artist": "Pillosnatchaz",
+    "year": "1998",
+    "hash": "https://midnight.s3.us-east-2.amazonaws.com/07+Pillosnatchaz+-+Lost+Artic.mp3",
+    "discogs": "The-Bomb-Shelta-Association-Rebirth/master/1820668"
+  }
+]
