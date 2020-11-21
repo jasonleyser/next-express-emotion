@@ -13,13 +13,15 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/register": "^7.12.1",
     "@emotion/babel-preset-css-prop": "10.1.0",
-    "@emotion/core": "10.1.1",
+    "@emotion/core": "10.0.35",
     "babel-plugin-module-resolver": "^4.0.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "next": "^10.0.1",
+    "next": "^10.0.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "howler": "^2.2.0",
+    "react-player": "^2.7"
   }
 }
