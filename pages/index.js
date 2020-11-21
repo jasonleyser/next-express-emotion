@@ -7,9 +7,9 @@ import data from "~/common/songlist.json";
 
 import Head from "next/head";
 
-import { css } from "@emotion/react";
+import { css } from "@emotion/core";
 
-const STYLES_LAYOUT_LEFT = css`
+const STYLES_LAYOUT_LEFT = `
   width: 100%;
   background-color: ${Constants.colors.black};
   background-image: url("paper.gif");
@@ -23,19 +23,19 @@ const STYLES_LAYOUT_LEFT = css`
   cursor: crosshair;
 `;
 
-const STYLES_CENTER = css`
+const STYLES_CENTER = `
   vertical-align: middle;
   horizontal-align: middle;
   text-align: center;
 `;
 
-const STYLES_LAYOUT = css`
+const STYLES_LAYOUT = `
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 `;
 
-const STYLES_MENU = css`
+const STYLES_MENU = `
   :hover {
     cursor: pointer;
     color: ${Constants.colors.red};
@@ -43,11 +43,11 @@ const STYLES_MENU = css`
   }
 `;
 
-const STYLES_GREEN = css`
+const STYLES_GREEN = `
   color: ${Constants.colors.green_secondary};
 `;
 
-const STYLES_OVERLAY = css`
+const STYLES_OVERLAY = `
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -61,7 +61,7 @@ const STYLES_OVERLAY = css`
   z-index: 1;
 `;
 
-const STYLES_HR = css`
+const STYLES_HR = `
   border: 1px solid ${Constants.colors.green_secondary};
 `;
 
@@ -82,7 +82,7 @@ export default class IndexPage extends React.Component {
     this.state = {
       started: true,
       playing: true,
-      song_url: "https://ipfs.io/ipfs/" + this.songDataInit.hash,
+      song_url: this.songDataInit.hash,
       name: this.songDataInit.name,
       artist: this.songDataInit.artist,
       year: this.songDataInit.year,
@@ -121,7 +121,7 @@ export default class IndexPage extends React.Component {
     const next = data[Math.floor(Math.random() * data.length)];
 
     this.setState({
-      song_url: "https://ipfs.io/ipfs/" + next.hash,
+      song_url: next.hash,
       name: next.name,
       artist: next.artist,
       discogs: "https://www.discogs.com/" + next.discogs,
@@ -178,9 +178,9 @@ export default class IndexPage extends React.Component {
   };
 
   render() {
-    const title = "Midnight Radio - Home of the 90s";
-    const description = "";
-    const url = "";
+    const title = "you're listening to midnight school";
+    const description = "the home of underground 90s hip-hop";
+    const url = "https://midnight.school/";
     const {
       song_url,
       playing,
