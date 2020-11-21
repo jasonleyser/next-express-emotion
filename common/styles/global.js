@@ -29,12 +29,32 @@ const GlobalStyles = () => css`
     display: block;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
   html, body {
-    background: ${Constants.colors.white};
-    color: ${Constants.colors.black};
+    height: 100%;
+    background: ${Constants.colors.black};
+    color: ${Constants.colors.grey};
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
+    font-family: 'VT323';
+    cursor: crosshair;
   }
+
+  a {
+    text-decoration: none;
+    cursor: crosshair;
+  }
+
+  a:hover {
+    color: ${Constants.colors.green_secondary};
+    cursor: crosshair;
+
+  }
+
+  a:visited {
+    color: ${Constants.colors.grey};
+  }
+
 `;
 
 export default GlobalStyles;

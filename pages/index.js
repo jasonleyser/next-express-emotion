@@ -1,43 +1,32 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
+import * as System from "~/components";
+import ReactPlayer from "react-player";
+
+import data from "~/common/songlist.json";
 
 import Head from "next/head";
 
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 const STYLES_LAYOUT_LEFT = css`
-  height: calc(100vh - ${Constants.sizes.navigation}px);
-  width: ${Constants.sizes.sidebar}px;
-  background: red;
-  font-size: 2rem;
-  overflow-y: scroll;
-
-  scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-`;
-
-const STYLES_LAYOUT_RIGHT = css`
-  height: calc(100vh - ${Constants.sizes.navigation}px);
-  min-width: 20%;
   width: 100%;
-  background: blue;
+  background-color: ${Constants.colors.black};
+  background-image: url("paper.gif");
   font-size: 2rem;
-  overflow-y: scroll;
-
-  scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
+  color: ${Constants.colors.grey};
+  padding-top: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: crosshair;
 `;
 
-const STYLES_NAVIGATION = css`
-  height: ${Constants.sizes.navigation}px;
-  background: green;
-  font-size: 2rem;
+const STYLES_CENTER = css`
+  vertical-align: middle;
+  horizontal-align: middle;
+  text-align: center;
 `;
 
 const STYLES_LAYOUT = css`
@@ -46,14 +35,45 @@ const STYLES_LAYOUT = css`
   justify-content: space-between;
 `;
 
+const STYLES_MENU = css`
+  :hover {
+    cursor: pointer;
+    color: ${Constants.colors.red};
+    text-shadow: 0 0 1px ${Constants.colors.red};
+  }
+`;
+
+const STYLES_GREEN = css`
+  color: ${Constants.colors.green_secondary};
+`;
+
+const STYLES_OVERLAY = css`
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-size: auto 4px;
+  z-index: 1;
+`;
+
+const STYLES_HR = css`
+  border: 1px solid ${Constants.colors.green_secondary};
+`;
+
+function display(seconds) {
+  const format = (val) => `0${Math.floor(val)}`.slice(-2);
+  const hours = seconds / 3600;
+  const minutes = (seconds % 3600) / 60;
+
+  return [hours, minutes, seconds % 60].map(format).join(":");
+}
+
 export default class IndexPage extends React.Component {
-<<<<<<< Updated upstream
-  render() {
-    const title = "next-express-emotion";
-    const description =
-      "minimal example for a full client server web application with next, express, and emotion.";
-    const url = "https://github.com/jimmylee/next-express-emotion";
-=======
   songDataInit = data[Math.floor(Math.random() * data.length)];
 
   constructor(props) {
@@ -172,7 +192,6 @@ export default class IndexPage extends React.Component {
       played,
       runtime,
     } = this.state;
->>>>>>> Stashed changes
 
     return (
       <React.Fragment>
@@ -214,10 +233,51 @@ export default class IndexPage extends React.Component {
 
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
-        <nav css={STYLES_NAVIGATION}>Navigation</nav>
+        <System.Logo url="/static/neon2.gif" height="200px" />
         <div css={STYLES_LAYOUT}>
-          <span css={STYLES_LAYOUT_LEFT}>Left Sidebar</span>
-          <span css={STYLES_LAYOUT_RIGHT}>Right Content</span>
+          <ReactPlayer
+            ref={this.ref}
+            url={song_url}
+            onPlay={this.handlePlay}
+            playing={playing}
+            onEnded={this.handleEnded}
+            width="0"
+            height="0"
+            playsinline={inline}
+            onProgress={this.handleProgress}
+            onDuration={this.handleDuration}
+            onBuffer={this.handlePlay}
+          />
+
+          <span css={STYLES_LAYOUT_LEFT}>
+            <div css={STYLES_CENTER}>
+              <div css={STYLES_MENU} onClick={this.handleEnded}>
+                >> next song
+              </div>
+              {this.state.playing ? (
+                <div css={STYLES_MENU} onClick={this.handlePlayPause}>
+                  || stop stream
+                </div>
+              ) : (
+                <div css={STYLES_MENU} onClick={this.handlePlayPause}>
+                  >> start stream
+                </div>
+              )}
+              <br />
+              {name === null ? (
+                <div css={STYLES_GREEN}>
+                  <span>Couldn't get the song...</span>
+                </div>
+              ) : (
+                <div>
+                  <div css={STYLES_GREEN}>run time: {display(runtime)}</div>
+                  <br />
+                  {name} ({year})<br />
+                  [artist] {artist} <br />
+                </div>
+              )}
+            </div>
+          </span>
         </div>
       </React.Fragment>
     );
